@@ -36,7 +36,7 @@ Progetto	Descrizione breve	Tecnologie
 
 
 📍 Live Demo
-👉 portfolio-stella-lyart.vercel.app
+👉 https://portfolio-stella-lyart.vercel.app/home
 
 📬 Contatti
 💌 Email: stella.dev@email.com
