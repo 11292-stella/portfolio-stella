@@ -1,12 +1,37 @@
-# React + Vite
+🌟 Stella | Full Stack Developer Portfolio
+Benvenuti nel mio portfolio personale! Qui racconto il mio viaggio da aspirante sviluppatrice a full stack developer, attraverso progetti reali, esperimenti creativi e tanta passione per il codice 💻✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Tecnologie utilizzate
+⚛️ React con Vite
 
-Currently, two official plugins are available:
+🎨 CSS e animazioni
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🧭 React Router
 
-## Expanding the ESLint configuration
+📦 Redux Toolkit
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔌 API REST
+
+☕ Java (Spring Boot) per il backend
+
+🧪 Testing con Vitest
+
+🧩 Progetti inclusi
+Progetto	Descrizione breve	Tecnologie
+🏋️‍♀️ Sneaky Workout	Capstone finale con backend Java e frontend React	React, Java, API
+🎧 Music Play	Player musicale con Redux e gestione stato	React, Redux
+🌦 Citywide Weather	App meteo con chiamate API e gestione dinamica	React, API
+📚 Libreria Horror	Catalogo libri con HTML/CSS/JS	Vanilla JS
+🍿 Netflix Clone	Interfaccia ispirata a Netflix con chiamate API	React, CSS
+🍽 Cartoon Bistro	Sito ristorante cartoon con Bootstrap	Bootstrap
+🎭 Animazioni CSS	Showcase di animazioni e transizioni CSS	CSS puro
+💡 Primi script JS	Mini progetti JS per esercitarsi con la logica	JavaScript
+
+
+📍 Live Demo
+👉 portfolio-stella-lyart.vercel.app
+
+📬 Contatti
+💌 Email: stella.dev@email.com
+
+💼 LinkedIn: https://www.linkedin.com/in/stella-marucelli-0992081a3/
