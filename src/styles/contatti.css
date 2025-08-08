@@ -1,0 +1,19 @@
+.contatti-color {
+  background-image: url("/public/cont.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  image-rendering: optimizeQuality;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s;
+  font-size: xx-large;
+}
+
+.contact-link:hover {
+  color: #a88bff;
+}
