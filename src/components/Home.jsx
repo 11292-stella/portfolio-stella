@@ -178,6 +178,57 @@ const Home = function () {
               </Col>
             </Row>
             {/**fine primo progetto */}
+            {/**inizio primo progetto */}
+            <Row className="justify-content-center mt-5">
+              <Col md={4} className="mt-0 mt-md-3 mt-lg-0 ">
+                <div className="image-wrapper">
+                  <Card className="cards2">
+                    <Card.Img variant="top" src="/pp.png" className="cardimg" />
+                    <Card.Body>
+                      <Card.Title className="titolo">DevGuide</Card.Title>
+                      <Card.Text>
+                        piattaforma motivazionale e interattiva pensata per chi
+                        vuole superare i propri limiti. Un campo di allenamento
+                        digitale dove disciplina, forza mentale e crescita
+                        personale si incontrano.
+                      </Card.Text>
+                      <Button
+                        href="https://dev-guide-liart.vercel.app/home"
+                        target="_blank"
+                        variant="info"
+                        className="bot"
+                      >
+                        vai al progetto
+                      </Button>
+                    </Card.Body>
+                  </Card>
+                </div>
+              </Col>
+              <Col
+                md={6}
+                className="d-flex flex-column mt-md-0 mt-3 justify-content-center text-light "
+              >
+                <p className=" text-light text1">
+                  DevGuide è nato dal desiderio di avere sempre a portata di
+                  mano una guida semplice, diretta e personale per ripassare i
+                  concetti fondamentali dello sviluppo web. È il frutto di
+                  giorni di studio, di prove, di errori e di tanta voglia di
+                  creare qualcosa che fosse davvero utile per me e per chi, come
+                  me, si ritrova spesso a cercare quel comando, quella sintassi,
+                  quel concetto che sembra sfuggire proprio quando serve. Non è
+                  stato tutto immediato: ho affrontato momenti di confusione, ho
+                  riscritto sezioni intere, ho imparato a gestire la
+                  frustrazione e a trovare soluzioni. Ma ogni card, ogni
+                  sezione, ogni dettaglio è lì per un motivo, pensato con cura e
+                  con ironia, per rendere l’esperienza leggera ma efficace.
+                  DevGuide non è solo una web app: è il mio modo di dire “ce la
+                  posso fare”, è il simbolo della mia crescita come
+                  sviluppatrice e della passione che metto in ogni riga di
+                  codice.
+                </p>
+              </Col>
+            </Row>
+            {/**fine primo progetto */}
             {/**secondo progetto */}
             <Row className="justify-content-center mt-5">
               <Col md={4} className="mt-0 mt-md-3 mt-lg-0 ">
