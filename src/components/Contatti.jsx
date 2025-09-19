@@ -95,7 +95,7 @@ const Contatti = function () {
                 giorno, eccomi qua.
               </p>
 
-              <Card className="cards2">
+              <Card className="cards2 mt-4">
                 <Card.Img variant="top" src="/cv.png" className="cardimg" />
                 <Card.Body>
                   <Card.Title className="titolo">CV Interattivo</Card.Title>
@@ -111,6 +111,26 @@ const Contatti = function () {
                     className="bot"
                   >
                     Vai al CV
+                  </Button>
+                </Card.Body>
+              </Card>
+
+              <Card className="cards2 mt-5">
+                <Card.Img variant="top" src="/pf.png" className="cardimg" />
+                <Card.Body>
+                  <Card.Title className="titolo">Profilo Epicode</Card.Title>
+                  <Card.Text>
+                    Il mio percorso formativo completo su Epicode: attestati,
+                    competenze e tappe del viaggio da grafica a full stack
+                    developer.
+                  </Card.Text>
+                  <Button
+                    href="https://talent.epicode.com/talent/549fd8c5-b132-433a-8a03-c38daf4a8960"
+                    target="_blank"
+                    variant="info"
+                    className="bot"
+                  >
+                    Vai al profilo
                   </Button>
                 </Card.Body>
               </Card>
