@@ -60,13 +60,16 @@ const Home = function () {
               md={6}
               className="d-flex flex-column mt-md-0 mt-3 justify-content-center text-light "
             >
-              <p className=" text-light text1">
-                Ciao! Mi chiamo Stella e questo è il mio spazio digitale, dove
-                racconto il mio percorso da curiosa appassionata di tecnologia a
-                sviluppatrice full stack. <br /> Amo trasformare idee in
-                interfacce intuitive e funzionali, e ogni progetto è per me una
-                piccola avventura. <br /> Benvenutə nel mio mondo fatto di
-                codice, creatività e tanta voglia di crescere.
+              <p className="text-light text1">
+                Ex grafica convertita al culto del codice. Junior full stack
+                developer con una passione per layout responsive, componenti
+                riutilizzabili e meme tecnici. <br />
+                Ho lasciato il mondo della stampa per abbracciare React, Java e
+                le gioie del debugging. <br />
+                Sto studiando Angular (con pazienza zen) e presto tradirò
+                Bootstrap con Tailwind. <br />
+                Se cerchi una developer che sa scrivere codice e anche riderci
+                sopra, ci siamo.
               </p>
             </Col>
             <Row className="justify-content-center mt-5">
@@ -141,10 +144,9 @@ const Home = function () {
                     <Card.Body>
                       <Card.Title className="titolo">Sneaky Workout</Card.Title>
                       <Card.Text>
-                        piattaforma motivazionale e interattiva pensata per chi
-                        vuole superare i propri limiti. Un campo di allenamento
-                        digitale dove disciplina, forza mentale e crescita
-                        personale si incontrano.
+                        Web app full stack per allenamenti personalizzati e
+                        motivazionali. Un campo digitale dove disciplina e
+                        ironia si incontrano.
                       </Card.Text>
                       <Button
                         href="https://front-project-personal-trainer.vercel.app/home"
@@ -162,18 +164,22 @@ const Home = function () {
                 md={6}
                 className="d-flex flex-column mt-md-0 mt-3 justify-content-center text-light "
               >
-                <p className=" text-light text1">
-                  Questo progetto è il risultato di un mese intenso di lavoro:
-                  il capstone finale del mio corso, realizzato con tutte le
-                  tecnologie che ho studiato. Non è stato facile: ho affrontato
-                  ostacoli tecnici, momenti di frustrazione e tante ore di
-                  debugging. Ma con determinazione e impegno, sono riuscita a
-                  completarlo. Sneaky Workout non è solo un sito: è il simbolo
-                  della mia crescita, della mia resilienza e della passione che
-                  metto in ciò che faccio. Ogni sezione, ogni funzione, ogni
-                  dettaglio è stato pensato per offrire un’esperienza
-                  coinvolgente e motivante, proprio come il percorso che mi ha
-                  portata fin qui
+                <p className="text-light text1">
+                  Sneaky Workout è il mio progetto capstone: una web app full
+                  stack pensata per chi vuole allenarsi in modo discreto ma
+                  efficace. Realizzata con React, Redux, Spring Boot e
+                  PostgreSQL, integra timer, selezione esercizi e notifiche.{" "}
+                  <br />
+                  È stato un mese intenso tra bug, refactoring e momenti di
+                  “perché non funziona?”, ma anche una palestra di crescita
+                  tecnica e personale. <br />
+                  Ogni funzione è pensata per motivare l’utente, proprio come il
+                  percorso che mi ha portata fin qui. Se il codice fosse uno
+                  sport, questo progetto sarebbe il mio primo triathlon.
+                </p>
+                <p className="text-light text1">
+                  <strong>Tecnologie:</strong> React, Redux Toolkit, Spring
+                  Boot, PostgreSQL, RESTful API, CSS3, Vite
                 </p>
               </Col>
             </Row>
@@ -187,11 +193,11 @@ const Home = function () {
                     <Card.Body>
                       <Card.Title className="titolo">DevGuide</Card.Title>
                       <Card.Text>
-                        piattaforma motivazionale e interattiva pensata per chi
-                        vuole superare i propri limiti. Un campo di allenamento
-                        digitale dove disciplina, forza mentale e crescita
-                        personale si incontrano.
+                        Web app pensata come guida pratica e personale per
+                        ripassare concetti chiave dello sviluppo web. Leggera,
+                        utile e con un pizzico di ironia.
                       </Card.Text>
+
                       <Button
                         href="https://dev-guide-liart.vercel.app/home"
                         target="_blank"
@@ -208,23 +214,21 @@ const Home = function () {
                 md={6}
                 className="d-flex flex-column mt-md-0 mt-3 justify-content-center text-light "
               >
-                <p className=" text-light text1">
-                  DevGuide è nato dal desiderio di avere sempre a portata di
-                  mano una guida semplice, diretta e personale per ripassare i
-                  concetti fondamentali dello sviluppo web. È il frutto di
-                  giorni di studio, di prove, di errori e di tanta voglia di
-                  creare qualcosa che fosse davvero utile per me e per chi, come
-                  me, si ritrova spesso a cercare quel comando, quella sintassi,
-                  quel concetto che sembra sfuggire proprio quando serve. Non è
-                  stato tutto immediato: ho affrontato momenti di confusione, ho
-                  riscritto sezioni intere, ho imparato a gestire la
-                  frustrazione e a trovare soluzioni. Ma ogni card, ogni
-                  sezione, ogni dettaglio è lì per un motivo, pensato con cura e
-                  con ironia, per rendere l’esperienza leggera ma efficace.
-                  DevGuide non è solo una web app: è il mio modo di dire “ce la
-                  posso fare”, è il simbolo della mia crescita come
-                  sviluppatrice e della passione che metto in ogni riga di
-                  codice.
+                <p className="text-light text1">
+                  DevGuide è una web app pensata per chi — come me — si ritrova
+                  spesso a cercare “quel comando che sapevo ieri”. Una raccolta
+                  di concetti fondamentali dello sviluppo web, organizzata in
+                  modo semplice e diretto. <br />
+                  È nata da giorni di studio, prove, errori e frustrazione
+                  trasformata in soluzioni. Ogni card è lì per un motivo:
+                  aiutare, ricordare, semplificare. <br />
+                  Realizzata con React e Redux, DevGuide è il mio modo di dire
+                  “ce la posso fare” — con ironia, determinazione e un layout
+                  responsive.
+                </p>
+                <p className="text-light text1">
+                  <strong>Tecnologie:</strong> React, Redux Toolkit, Vite, CSS3,
+                  Responsive Design
                 </p>
               </Col>
             </Row>
@@ -238,10 +242,9 @@ const Home = function () {
                     <Card.Body>
                       <Card.Title className="titolo">Music play</Card.Title>
                       <Card.Text>
-                        Applicazione frontend sviluppata come ultimo compito del
-                        corso. Un esercizio pratico dove ho messo in campo Redux
-                        per gestire lo stato in modo efficiente, consolidando le
-                        competenze acquisite.
+                        Web app frontend sviluppata per consolidare le
+                        competenze acquisite, con focus sulla gestione dello
+                        stato tramite Redux.
                       </Card.Text>
                       <Button
                         href="https://lastproject-main.vercel.app/#home"
@@ -259,20 +262,22 @@ const Home = function () {
                 md={6}
                 className="d-flex flex-column mt-md-0 mt-3 justify-content-center text-light "
               >
-                <p className=" text-light text1">
-                  Questo progetto segna la conclusione del mio percorso di studi
-                  frontend. Non è stato un capstone, ma l’ultimo esercizio
-                  ufficiale: un’occasione per dimostrare padronanza delle
-                  tecnologie apprese, in particolare Redux. L’obiettivo era
-                  creare un’app funzionale, ben strutturata e con una gestione
-                  dello stato solida. Anche se non ha richiesto settimane di
-                  lavoro come altri progetti, è stato fondamentale per
-                  consolidare ciò che ho imparato. Ogni componente, ogni flusso
-                  di dati, ogni interazione è stata pensata per essere chiara,
-                  efficiente e scalabile. Music play è il punto finale di un
-                  percorso, ma anche l’inizio di una nuova fase: quella in cui
-                  metto in pratica tutto ciò che ho imparato, con sicurezza e
-                  voglia di crescere ancora.
+                <p className="text-light text1">
+                  Music Play è l’ultimo progetto frontend del mio percorso
+                  Epicode: un’app pensata per mettere in pratica le competenze
+                  acquisite, in particolare la gestione dello stato con Redux.{" "}
+                  <br />
+                  L’obiettivo era creare un’interfaccia funzionale, ben
+                  strutturata e scalabile. Ogni componente e flusso dati è stato
+                  progettato per essere chiaro ed efficiente. <br />
+                  Anche se non è stato il progetto più lungo, è stato
+                  fondamentale per consolidare ciò che ho imparato e segnare il
+                  passaggio dalla teoria alla pratica. Music Play è il mio
+                  “ultimo compito”, ma anche il primo passo verso lo sviluppo
+                  consapevole.
+                </p>
+                <p className="text-light text1">
+                  <strong>Tecnologie:</strong> React, Redux Toolkit, Vite, CSS3
                 </p>
               </Col>
             </Row>
@@ -288,11 +293,11 @@ const Home = function () {
                         Citywide weather
                       </Card.Title>
                       <Card.Text>
-                        è una semplice web app meteo che mostra le condizioni
-                        atmosferiche in tempo reale. Un progetto leggero ma
-                        significativo, nato mentre muovevo i primi passi con
-                        React.
+                        Web app meteo in tempo reale, sviluppata per esplorare
+                        React, chiamate API e gestione dello stato. Un primo
+                        passo concreto nel mondo frontend.
                       </Card.Text>
+
                       <Button
                         href="https://nuovpro.vercel.app/"
                         target="_blank"
@@ -309,18 +314,21 @@ const Home = function () {
                 md={6}
                 className="d-flex flex-column mt-md-0 mt-3 justify-content-center text-light "
               >
-                <p className=" text-light text1">
-                  Questo progetto è stato uno dei miei primi esperimenti con
-                  React: una piccola applicazione meteo che mi ha aiutato a
-                  comprendere il funzionamento dei componenti, degli hook e
-                  delle chiamate API. Anche se semplice nella struttura, è stato
-                  fondamentale per familiarizzare con il ciclo di vita di React
-                  e con la logica asincrona. Ho imparato a gestire lo stato, a
-                  strutturare il layout e a rendere l’interfaccia responsive.
-                  Citywide Weather rappresenta quel momento in cui la teoria ha
-                  iniziato a trasformarsi in pratica. È il primo tassello di un
-                  percorso che oggi mi porta a costruire progetti sempre più
-                  complessi e funzionali.
+                <p className="text-light text1">
+                  Citywide Weather è stata una delle mie prime esperienze con
+                  React: una web app semplice ma fondamentale per comprendere
+                  componenti, hook e chiamate API. <br />
+                  Mi ha permesso di familiarizzare con il ciclo di vita dei
+                  componenti, la logica asincrona e la gestione dello stato.{" "}
+                  <br />
+                  Ogni funzione è stata pensata per essere chiara e responsive,
+                  e ha segnato il passaggio dalla teoria alla pratica. È il
+                  primo tassello di un percorso che oggi mi porta a costruire
+                  progetti sempre più strutturati e funzionali.
+                </p>
+                <p className="text-light text1">
+                  <strong>Tecnologie:</strong> React, JavaScript, OpenWeather
+                  API, CSS3
                 </p>
               </Col>
             </Row>
@@ -336,11 +344,12 @@ const Home = function () {
                         Libreria Horror
                       </Card.Title>
                       <Card.Text>
-                        Vetrina digitale dedicata ai libri dell’orrore. Un
-                        progetto realizzato quando ancora non conoscevo React—e
-                        si vede! Ma è stato il primo passo verso una nuova
-                        consapevolezza.
+                        Vetrina digitale dedicata ai libri dell’orrore,
+                        realizzata nei primi passi del mio percorso. HTML, CSS e
+                        un pizzico di JavaScript — prima di scoprire React e la
+                        pace interiore.
                       </Card.Text>
+
                       <Button
                         href="https://h-r7wd-stellas-projects-76eb7045.vercel.app/"
                         target="_blank"
@@ -357,19 +366,20 @@ const Home = function () {
                 md={6}
                 className="d-flex flex-column mt-md-0 mt-3 justify-content-center text-light "
               >
-                <p className=" text-light text1">
-                  Questo progetto è nato in un periodo in cui stavo ancora
-                  cercando di orientarmi nel mondo dello sviluppo web. Non
-                  conoscevo ancora React, e ogni piccola funzionalità sembrava
-                  una montagna da scalare. La Libreria Horror è una semplice
-                  pagina che presenta una selezione di libri inquietanti, con
-                  un’atmosfera cupa e accattivante. Anche se tecnicamente
-                  rudimentale, mi ha permesso di sperimentare con HTML, CSS e un
-                  pizzico di JavaScript. Fortunatamente, poco dopo ho scoperto
-                  React—e da lì in poi la vita da sviluppatrice è diventata
-                  magicamente più semplice. Questo progetto resta un ricordo
-                  prezioso: il punto di partenza di un percorso fatto di
-                  scoperte, errori e tanta crescita.
+                <p className="text-light text1">
+                  Libreria Horror è uno dei miei primi esperimenti nel mondo
+                  dello sviluppo web: una pagina dedicata ai libri inquietanti,
+                  con atmosfera cupa e layout semplice. <br />
+                  Realizzata con HTML, CSS e un po’ di JavaScript, mi ha
+                  permesso di muovere i primi passi tra strutture, stili e
+                  interazioni. <br />
+                  Non conoscevo ancora React — e si vede! — ma questo progetto
+                  ha segnato l’inizio del mio percorso, fatto di scoperte,
+                  errori e tanta crescita. Oggi lo guardo con affetto: è il mio
+                  “prequel tecnico”.
+                </p>
+                <p className="text-light text1">
+                  <strong>Tecnologie:</strong> HTML5, CSS3, JavaScript
                 </p>
               </Col>
             </Row>
@@ -383,10 +393,11 @@ const Home = function () {
                     <Card.Body>
                       <Card.Title className="titolo">Netflix Clone</Card.Title>
                       <Card.Text>
-                        Progetto scolastico dove abbiamo simulato la celebre
-                        piattaforma di streaming, utilizzando le API fornite
-                        dalla scuola. Un’esperienza divertente e formativa!
+                        Web app ispirata a Netflix, sviluppata durante un
+                        workshop scolastico. Un esercizio pratico per esplorare
+                        React, chiamate API e design dell’interfaccia.
                       </Card.Text>
+
                       <Button
                         href="https://w8project-2k6o.vercel.app/"
                         target="_blank"
@@ -403,20 +414,21 @@ const Home = function () {
                 md={6}
                 className="d-flex flex-column mt-md-0 mt-3 justify-content-center text-light "
               >
-                <p className=" text-light text1">
-                  Questo progetto è nato durante un workshop scolastico, dove ci
-                  è stato chiesto di ricreare una versione semplificata di
-                  Netflix. Abbiamo utilizzato le API messe a disposizione dalla
-                  scuola per popolare l’interfaccia con film e serie TV. È stato
-                  entusiasmante lavorare su un layout familiare e cercare di
-                  replicare l’esperienza utente nel modo più fedele possibile.
-                  Ho imparato a gestire le chiamate API, a strutturare le pagine
-                  con React e a curare i dettagli visivi per rendere l’app
-                  accattivante. Netflix Clone è stato un vero banco di prova: mi
-                  ha permesso di mettere in pratica concetti fondamentali e di
-                  lavorare in modo più consapevole sul design e sulla logica. Un
-                  progetto che mi ha fatto sentire, per la prima volta, davvero
-                  dentro al mondo dello sviluppo web.
+                <p className="text-light text1">
+                  Netflix Clone è stato il mio primo vero banco di prova: una
+                  web app sviluppata durante un workshop scolastico, con
+                  l’obiettivo di replicare l’esperienza utente della celebre
+                  piattaforma di streaming. <br />
+                  Ho utilizzato le API fornite per popolare l’interfaccia con
+                  film e serie TV, imparando a gestire chiamate asincrone,
+                  strutturare le pagine con React e curare il design visivo.{" "}
+                  <br />È stato un progetto divertente e formativo, che mi ha
+                  fatto sentire — per la prima volta — davvero dentro al mondo
+                  dello sviluppo web.
+                </p>
+                <p className="text-light text1">
+                  <strong>Tecnologie:</strong> React, JavaScript, API
+                  scolastiche, CSS3
                 </p>
               </Col>
             </Row>
@@ -431,11 +443,12 @@ const Home = function () {
                     <Card.Body>
                       <Card.Title className="titolo">Cartoon Bistro</Card.Title>
                       <Card.Text>
-                        Sito per un ristorante ispirato ai cartoni animati,
-                        creato durante le mie prime esperienze con Bootstrap. Un
-                        progetto divertente e colorato che mi ha fatto scoprire
-                        il potenziale del design responsive.
+                        Sito vetrina per un ristorante immaginario ispirato ai
+                        cartoni animati. Creato durante le prime esperienze con
+                        Bootstrap, per esplorare layout responsive e design
+                        creativo.
                       </Card.Text>
+
                       <Button
                         href="https://week6-day2.vercel.app/#"
                         target="_blank"
@@ -452,19 +465,20 @@ const Home = function () {
                 md={6}
                 className="d-flex flex-column mt-md-0 mt-3 justify-content-center text-light "
               >
-                <p className=" text-light text1">
-                  Questo progetto è nato quando stavo iniziando a esplorare
-                  Bootstrap: il mio primo vero approccio a un framework CSS. Ho
-                  deciso di creare un sito per un ristorante immaginario
-                  ispirato ai cartoni animati, giocando con colori vivaci,
-                  layout responsive e componenti predefiniti. È stato un
-                  esercizio leggero ma molto utile per capire come strutturare
-                  una pagina in modo ordinato e adattabile a tutti i
-                  dispositivi. Cartoon Bistro mi ha fatto divertire e mi ha dato
-                  fiducia: ho visto come, anche con strumenti semplici, si può
-                  creare qualcosa di piacevole e funzionale. È stato uno dei
-                  primi momenti in cui ho sentito che il web design poteva
-                  essere anche creativo e giocoso.
+                <p className="text-light text1">
+                  Cartoon Bistro è stato il mio primo esperimento con Bootstrap:
+                  un sito vetrina per un ristorante immaginario ispirato ai
+                  cartoni animati. <br />
+                  Ho giocato con colori vivaci, layout responsive e componenti
+                  predefiniti per creare un’interfaccia divertente e funzionale.{" "}
+                  <br />È stato un esercizio leggero ma fondamentale per capire
+                  come strutturare una pagina web in modo ordinato e adattabile.
+                  Cartoon Bistro mi ha fatto scoprire che il web design può
+                  essere anche creativo e giocoso — e che Bootstrap può essere
+                  un ottimo alleato per iniziare.
+                </p>
+                <p className="text-light text1">
+                  <strong>Tecnologie:</strong> HTML5, CSS3, Bootstrap
                 </p>
               </Col>
             </Row>
@@ -480,10 +494,11 @@ const Home = function () {
                         Animazioni in Azione
                       </Card.Title>
                       <Card.Text>
-                        è il mio primo esperimento con le animazioni CSS. Ho
-                        giocato con movimenti, transizioni e trasformazioni per
-                        dare vita a semplici elementi grafici.
+                        Primo esperimento con animazioni CSS: transizioni,
+                        trasformazioni e piccoli effetti dinamici per rendere
+                        gli elementi più vivi e interattivi.
                       </Card.Text>
+
                       <Button
                         href="https://w5d4-xqcw-stellas-projects-76eb7045.vercel.app/"
                         target="_blank"
@@ -500,18 +515,22 @@ const Home = function () {
                 md={6}
                 className="d-flex flex-column mt-md-0 mt-3 justify-content-center text-light "
               >
-                <p className=" text-light text1">
-                  In questo progetto ho scoperto il mondo delle animazioni CSS e
-                  mi sono divertita a sperimentare con rotazioni, transizioni e
-                  piccoli effetti dinamici. Ogni “task” è stato un’occasione per
-                  provare qualcosa di nuovo: far girare un elemento, farlo
-                  apparire con un effetto fluido, oppure modificarne lo stile al
-                  passaggio del mouse. Anche se il contenuto era semplice, il
-                  vero obiettivo era capire il comportamento degli elementi
-                  animati e come rendere una pagina più interattiva e
-                  coinvolgente. Questo progetto mi ha fatto capire quanto anche
-                  un piccolo movimento possa cambiare la percezione di un sito,
-                  rendendolo più vivo e interessante.
+                <p className="text-light text1">
+                  Animazioni in Azione è stato il mio primo tuffo nel mondo
+                  delle animazioni CSS: un progetto semplice ma fondamentale per
+                  capire come dare movimento e personalità agli elementi
+                  grafici. <br />
+                  Ho sperimentato con rotazioni, transizioni e trasformazioni,
+                  imparando a rendere le interfacce più coinvolgenti e reattive.{" "}
+                  <br />
+                  Ogni effetto è stato un piccolo test creativo, e ogni task
+                  un’occasione per scoprire quanto anche un dettaglio animato
+                  possa cambiare la percezione di una pagina. È il progetto dove
+                  ho capito che il front-end può anche... ballare.
+                </p>
+                <p className="text-light text1">
+                  <strong>Tecnologie:</strong> HTML5, CSS3, Animazioni CSS,
+                  Transizioni, Transform
                 </p>
               </Col>
             </Row>
@@ -525,10 +544,11 @@ const Home = function () {
                     <Card.Body>
                       <Card.Title className="titolo">Play to Mamory</Card.Title>
                       <Card.Text>
-                        il mio primo progetto dove ho iniziato a usare
-                        JavaScript. Ho sperimentato con logica, interazioni e
-                        piccoli script per rendere la pagina più dinamica.
+                        Primo progetto JavaScript: interazioni, logica e piccoli
+                        script per trasformare una pagina statica in qualcosa di
+                        vivo e dinamico.
                       </Card.Text>
+
                       <Button
                         href="https://mio-progetto-theta.vercel.app/"
                         target="_blank"
@@ -545,18 +565,20 @@ const Home = function () {
                 md={6}
                 className="d-flex flex-column mt-md-0 mt-3 justify-content-center text-light "
               >
-                <p className=" text-light text1">
-                  Questo progetto segna il mio primissimo approccio con
-                  JavaScript. Dopo aver lavorato con HTML e CSS, sentivo il
-                  bisogno di aggiungere un po’ di logica e interattività alle
-                  mie pagine. Ho iniziato con semplici script: risposte a
-                  eventi, modifiche al DOM, e piccole funzionalità che rendevano
-                  il sito più “vivo”. Anche se il codice era basilare, è stato
-                  un momento importante: ho capito come il JavaScript può
-                  trasformare una pagina statica in qualcosa di dinamico e
-                  reattivo. Questo progetto è stato il mio trampolino verso il
-                  mondo della programmazione vera e propria, e mi ha dato la
-                  spinta per continuare a esplorare.
+                <p className="text-light text1">
+                  Play to Mamory è il mio primo esperimento con JavaScript: un
+                  progetto semplice ma fondamentale per passare da HTML e CSS
+                  alla logica vera e propria. <br />
+                  Ho iniziato a gestire eventi, modificare il DOM e creare
+                  piccole funzionalità interattive. Anche se il codice era
+                  basilare, è stato il trampolino verso il mondo della
+                  programmazione. <br />
+                  Questo progetto mi ha fatto scoprire quanto anche un semplice
+                  script possa dare vita a una pagina — e quanto mi piacesse
+                  scrivere codice che reagisce.
+                </p>
+                <p className="text-light text1">
+                  <strong>Tecnologie:</strong> HTML5, CSS3, JavaScript
                 </p>
               </Col>
             </Row>

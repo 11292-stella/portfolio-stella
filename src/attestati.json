@@ -1,116 +1,104 @@
 [
   {
     "id": 1,
-    "titolo": "css3/html",
-    "descrizione": "Il primo passo concreto nel mio percorso da sviluppatrice: questo certificato rappresenta le basi solide su cui ho iniziato a costruire interfacce web moderne e responsive. Rilasciato da Epicode il 07/02/2025",
+    "titolo": "CSS3 / HTML",
+    "descrizione": "Basi solide per interfacce web moderne e responsive con HTML5 e CSS3.",
     "immagine": "/attestati/1.png"
   },
-
   {
     "id": 2,
-    "titolo": "javascript",
-    "descrizione": "Questo modulo ha rappresentato il cuore della mia formazione: con JavaScript ho iniziato a dare vita alle pagine web, rendendole dinamiche e interattive. Rilasciato da Epicode il 14/02/2025",
+    "titolo": "JavaScript",
+    "descrizione": "Logica, eventi e interattività per pagine web dinamiche.",
     "immagine": "/attestati/2.png"
   },
-
   {
     "id": 3,
-    "titolo": "Dom",
-    "descrizione": "Con questo modulo ho imparato a dialogare con la struttura delle pagine web: manipolare il DOM, gestire eventi e creare interazioni fluide. Rilasciato da Epicode il 26/02/2025",
+    "titolo": "DOM",
+    "descrizione": "Manipolazione DOM, gestione eventi e interazioni fluide.",
     "immagine": "/attestati/3.png"
   },
   {
     "id": 4,
-    "titolo": "Sass",
-    "descrizione": "Questo modulo mi ha insegnato a dare stile al codice: con Sass ho imparato a scrivere CSS modulare e potente, mentre Bootstrap mi ha permesso di costruire layout reattivi e professionali in pochi passaggi. Certificato rilasciato da Epicode il 14/03/2025",
+    "titolo": "Sass & Bootstrap",
+    "descrizione": "CSS modulare con Sass e layout reattivi con Bootstrap.",
     "immagine": "/attestati/4.png"
   },
-
   {
     "id": 5,
-    "titolo": "Animazioni",
-    "descrizione": "Con questo modulo ho imparato a dare vita alle interfacce: animazioni fluide, layout flessibili con Flexbox e una padronanza avanzata di HTML5 e CSS3. Certificato rilasciato da Epicode il 26/03/2025",
+    "titolo": "Animazioni & Flexbox",
+    "descrizione": "Animazioni fluide, layout flessibili e padronanza avanzata di HTML/CSS.",
     "immagine": "/attestati/5.png"
   },
   {
     "id": 6,
-    "titolo": "OOP, Api",
-    "descrizione": "Questo modulo mi ha permesso di comprendere la logica dietro le applicazioni dinamiche: dalla programmazione orientata agli oggetti alla gestione asincrona dei dati con AJAX, Promises e Fetch API. Ho imparato a costruire flussi CRUD completi e gestire l’attesa con async/await. Certificato rilasciato da Epicode il 26/03/2025",
+    "titolo": "OOP & API",
+    "descrizione": "Programmazione orientata agli oggetti, AJAX, Promises, Fetch API e flussi CRUD.",
     "immagine": "/attestati/6.png"
   },
-
   {
     "id": 7,
-    "titolo": "React, Redux",
-    "descrizione": "In questo modulo ho approfondito l’ecosistema React: dalla composizione dei componenti alla gestione dello stato globale con Redux, passando per il routing dinamico e i test automatizzati. Certificato rilasciato da Epicode il 11/04/2025",
+    "titolo": "React & Redux",
+    "descrizione": "Componenti React, routing dinamico e gestione stato globale con Redux.",
     "immagine": "/attestati/7.png"
   },
   {
     "id": 8,
-    "titolo": "Redux,TypeScript ",
-    "descrizione": "In questo modulo ho imparato a gestire lo stato globale delle applicazioni con Redux, strutturare la logica con Reducers e scrivere codice più sicuro e scalabile grazie a TypeScript. Certificato rilasciato da Epicode il 18/04/2025",
+    "titolo": "Redux & TypeScript",
+    "descrizione": "Stato globale con Redux e codice tipizzato e scalabile con TypeScript.",
     "immagine": "/attestati/8.png"
   },
-
   {
     "id": 9,
     "titolo": "React",
-    "descrizione": "Questo modulo mi ha introdotto al mondo di React: ho imparato a costruire Single Page Applications, gestire lo stato dei componenti, e comprendere il loro ciclo di vita. Certificato rilasciato da Epicode il 23/04/2025",
+    "descrizione": "SPA con React, gestione stato dei componenti e ciclo di vita.",
     "immagine": "/attestati/9.png"
   },
   {
     "id": 10,
     "titolo": "Java",
-    "descrizione": "Questo modulo mi ha introdotto ai concetti fondamentali della programmazione orientata agli oggetti, applicati in Java: ho imparato a strutturare il codice in modo modulare, riutilizzabile e scalabile. Certificato rilasciato da Epicode il 09/05/2025",
+    "descrizione": "Fondamenti OOP in Java: codice modulare, riutilizzabile e scalabile.",
     "immagine": "/attestati/10.png"
   },
-
   {
     "id": 11,
-    "titolo": "Streams e Lambda Expressions",
-    "descrizione": "Questo modulo mi ha permesso di padroneggiare le Collections Java, utilizzare Streams e Lambda Expressions per manipolare dati in modo funzionale, e gestire file system con Java. Certificato rilasciato da Epicode il 16/05/2025",
+    "titolo": "Streams & Lambda",
+    "descrizione": "Manipolazione dati con Streams, Lambda Expressions e gestione file system.",
     "immagine": "/attestati/11.png"
   },
-
   {
     "id": 12,
-    "titolo": "SQL e PostgreSQL",
-    "descrizione": "Questo modulo mi ha insegnato a progettare e interrogare database relazionali con SQL e PostgreSQL, e a integrare la persistenza dei dati nelle applicazioni Java tramite JPA. Certificato rilasciato da Epicode il 23/05/2025",
+    "titolo": "SQL & PostgreSQL",
+    "descrizione": "Progettazione e interrogazione database relazionali con SQL e JPA.",
     "immagine": "/attestati/12.png"
   },
-
   {
     "id": 13,
-    "titolo": "Spring Framework e test",
-    "descrizione": "Questo modulo mi ha introdotto al Spring Framework, uno standard per lo sviluppo Java moderno. Ho imparato a gestire le dipendenze con IoC e Dependency Injection, a interagire con i database tramite Spring Data, e a scrivere test automatizzati con JUnit. Certificato rilasciato da Epicode il 07/06/2025",
+    "titolo": "Spring Framework & Test",
+    "descrizione": "IoC, Dependency Injection, Spring Data e test automatizzati con JUnit.",
     "immagine": "/attestati/13.png"
   },
-
   {
     "id": 14,
-    "titolo": "RESTful API con Spring Boot",
-    "descrizione": "Questo modulo mi ha insegnato a progettare e implementare RESTful API con Spring Boot, a gestire gli errori in modo elegante e a integrare funzionalità di upload file nelle applicazioni web. Certificato rilasciato da Epicode il 13/06/2025",
+    "titolo": "RESTful API",
+    "descrizione": "Progettazione API con Spring Boot, gestione errori e upload file.",
     "immagine": "/attestati/14.png"
   },
-
   {
     "id": 15,
-    "titolo": "JWT e Spring Security",
-    "descrizione": "Questo modulo mi ha permesso di implementare sistemi di autenticazione sicura con JWT e Spring Security, proteggere i dati sensibili con password hashing, strutturare il codice con design patterns e gestire il versionamento in modo professionale con Git avanzato. Certificato rilasciato da Epicode il 20/06/2025",
+    "titolo": "JWT & Spring Security",
+    "descrizione": "Autenticazione sicura con JWT, protezione dati e Git avanzato.",
     "immagine": "/attestati/15.png"
   },
-
   {
     "id": 16,
-    "titolo": "Agile,Scrum ",
-    "descrizione": "Questo modulo mi ha insegnato a gestire progetti software in modo Agile, utilizzando framework come Scrum per organizzare il lavoro in sprint, assegnare ruoli e monitorare il progresso. Certificato rilasciato da Epicode il 10/07/2025",
+    "titolo": "Agile & Scrum",
+    "descrizione": "Gestione progetti software con Agile e organizzazione sprint con Scrum.",
     "immagine": "/attestati/16.png"
   },
-
   {
     "id": 17,
     "titolo": "Python",
-    "descrizione": "Questo corso intermedio mi ha permesso di approfondire le basi di Python, esplorando le sue applicazioni pratiche e consolidando la mia capacità di scrivere codice leggibile ed efficiente. Durata: 6 ore — Docente: Pitone Programmatore — Data: 04/08/2025.",
+    "descrizione": "Basi di Python e applicazioni pratiche per codice leggibile ed efficiente.",
     "immagine": "/attestati/17.png"
   }
 ]
