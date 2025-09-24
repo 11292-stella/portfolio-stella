@@ -1,6 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap"
-import Button from "react-bootstrap/Button"
-import Card from "react-bootstrap/Card"
+import { Container, Row, Col, Card, Button } from "react-bootstrap"
 import "../styles/contatti.css"
 import "@fortawesome/fontawesome-free/css/all.min.css"
 
@@ -10,67 +8,109 @@ const Contatti = function () {
       <div className="d-flex flex-column min-vh-100 contatti-color">
         <Container className="flex-grow-1 py-5">
           <Row className="justify-content-center mt-5">
-            <Col md={6} className="mt-0 mt-md-3 mt-lg-0">
-              <div className="image-wrapper">
-                <Card className="cards2">
-                  <Card.Body>
-                    <Card.Title className="titolo text-center mb-4">
-                      Dove trovarmi
-                    </Card.Title>
-                    <Card.Text className="text-center">
-                      <div className="mb-3">
+            <Col md={8} className="mt-0 mt-md-3 mt-lg-0">
+              <Card className="cards2">
+                <Card.Body>
+                  <Card.Title className="titolo text-center mb-4">
+                    Troviamoci
+                  </Card.Title>
+
+                  <Card.Text className="text-center">
+                    <Row className="justify-content-center">
+                      <Col xs={12} md={6} lg={4} className="mb-4">
                         <a
                           href="https://github.com/11292-stella"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="contact-link d-flex align-items-center justify-content-center"
+                          className="contact-link d-flex flex-column align-items-center"
                         >
                           <i
-                            className="fab fa-github"
-                            style={{ fontSize: "24px", color: "#ffffff" }}
+                            className="fab fa-github mb-2"
+                            style={{ fontSize: "40px", color: "#ffffff" }}
                           ></i>
                           <span className="ms-2">GitHub</span>
                         </a>
-                      </div>
-                      <div className="mb-3">
+                      </Col>
+                      <Col xs={12} md={6} lg={4} className="mb-4">
                         <a
                           href="https://www.linkedin.com/in/stella-marucelli-0992081a3/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="contact-link d-flex align-items-center justify-content-center"
+                          className="contact-link d-flex flex-column align-items-center"
                         >
                           <i
-                            className="fab fa-linkedin"
-                            style={{ fontSize: "24px", color: "#ffffff" }}
+                            className="fab fa-linkedin mb-2"
+                            style={{ fontSize: "40px", color: "#ffffff" }}
                           ></i>
                           <span className="ms-2">LinkedIn</span>
                         </a>
-                      </div>
-                      <div>
+                      </Col>
+                      <Col xs={12} md={6} lg={4} className="mb-4">
                         <a
                           href="mailto:stella.marucelli@gmail.com"
-                          className="contact-link d-flex align-items-center justify-content-center"
+                          className="contact-link d-flex flex-column align-items-center"
                         >
                           <i
-                            className="fas fa-envelope"
-                            style={{ fontSize: "24px", color: "#ffffff" }}
+                            className="fas fa-envelope mb-2"
+                            style={{ fontSize: "40px", color: "#ffffff" }}
                           ></i>
-                          <span className="ms-2">
-                            stella.marucelli@gmail.com
-                          </span>
+                          <span className="ms-2">Email</span>
                         </a>
+                      </Col>
+                    </Row>
+                    <hr className="my-4" />
+                    {/* CV e profilo Epicode */}
+                    <div className="d-flex flex-column flex-md-row justify-content-around mt-4">
+                      {/* Card per il CV Interattivo */}
+                      <div className="text-center mb-4 mb-md-0">
+                        <img
+                          src="/cv.png"
+                          alt="CV"
+                          className="img-fluid"
+                          style={{ maxWidth: "150px" }}
+                        />
+                        <h5 className="mt-3">CV Interattivo</h5>
+                        <p className="card-text">
+                          Per conoscermi oltre il PDF.
+                        </p>
+                        <Button
+                          href="https://cv-stella-marucelli.vercel.app/"
+                          target="_blank"
+                          variant="info"
+                          className="bot mt-2"
+                        >
+                          Vai al CV
+                        </Button>
                       </div>
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </div>
-            </Col>
-          </Row>
 
-          {/* Testo conclusivo sotto la card */}
-          <Row className="justify-content-center mt-4">
-            <Col md={8}>
-              <p className="text-light text-center text1">
+                      {/* Card per il Profilo Epicode */}
+                      <div className="text-center">
+                        <img
+                          src="/pf.png"
+                          alt="Profilo Epicode"
+                          className="img-fluid"
+                          style={{ maxWidth: "150px" }}
+                        />
+                        <h5 className="mt-3">Profilo Epicode</h5>
+                        <p className="card-text">
+                          Il mio percorso formativo completo.
+                        </p>
+                        <Button
+                          href="https://talent.epicode.com/talent/549fd8c5-b132-433a-8a03-c38daf4a8960"
+                          target="_blank"
+                          variant="info"
+                          className="bot mt-2"
+                        >
+                          Vai al profilo
+                        </Button>
+                      </div>
+                    </div>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+
+              {/* Testo conclusivo sotto la card */}
+              <p className="text-light text-center text1 mt-4">
                 Non sono un genio del codice, <br />
                 non ho vinto hackathon, e non ho creato l'app che rivoluziona il
                 mondo (ancora). <br />
@@ -84,7 +124,7 @@ const Contatti = function () {
                 <br />
                 Cerco un lavoro dove possa crescere, contribuire e diciamolo
                 guadagnare abbastanza <br />
-                per pagare l’affitto e concedermi una pizza ogni tanto 🍕.{" "}
+                per pagare l’affitto e concedermi una pizza ogni tanto 🍕.
                 <br />
                 <br />
                 Sono aperta a opportunità in tutta Italia: Roma, Milano,
@@ -94,46 +134,6 @@ const Contatti = function () {
                 Se cerchi qualcuno che non sa tutto ma vuole sapere di più ogni
                 giorno, eccomi qua.
               </p>
-
-              <Card className="cards2 mt-4">
-                <Card.Img variant="top" src="/cv.png" className="cardimg" />
-                <Card.Body>
-                  <Card.Title className="titolo">CV Interattivo</Card.Title>
-                  <Card.Text>
-                    Il mio curriculum in versione web: responsive, navigabile e
-                    con un pizzico di ironia. Per chi vuole conoscermi oltre il
-                    PDF.
-                  </Card.Text>
-                  <Button
-                    href="https://cv-stella-marucelli.vercel.app/"
-                    target="_blank"
-                    variant="info"
-                    className="bot"
-                  >
-                    Vai al CV
-                  </Button>
-                </Card.Body>
-              </Card>
-
-              <Card className="cards2 mt-5">
-                <Card.Img variant="top" src="/pf.png" className="cardimg" />
-                <Card.Body>
-                  <Card.Title className="titolo">Profilo Epicode</Card.Title>
-                  <Card.Text>
-                    Il mio percorso formativo completo su Epicode: attestati,
-                    competenze e tappe del viaggio da grafica a full stack
-                    developer.
-                  </Card.Text>
-                  <Button
-                    href="https://talent.epicode.com/talent/549fd8c5-b132-433a-8a03-c38daf4a8960"
-                    target="_blank"
-                    variant="info"
-                    className="bot"
-                  >
-                    Vai al profilo
-                  </Button>
-                </Card.Body>
-              </Card>
             </Col>
           </Row>
         </Container>
