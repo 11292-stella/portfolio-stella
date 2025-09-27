@@ -213,3 +213,16 @@ p {
     transform: translateX(-100%);
   }
 }
+.tech-scroll {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tech-logo {
+  scroll-snap-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tech-logo:hover {
+  transform: scale(1.1);
+}

@@ -115,47 +115,51 @@ const Home = function () {
     <>
       <div className="d-flex flex-column min-vh-100 home-color">
         <Container className="flex-grow-1 py-5">
-          <h1 className="text-center mt-4"> Ctrl + Me = Portfolio</h1>
+          <div className="p-4 rounded-4 shadow-lg border mt-5 border-secondary bg-opacity-10">
+            <h1 className="text-center mb-4">Ctrl + Me = Portfolio</h1>
 
-          <Row className="mt-5">
-            <Col md={4} className="mt-0 mt-md-3 mt-lg-0 ">
-              <div className="image-wrapper">
-                <Image
-                  src="/io.png"
-                  alt="Descrizione immagine"
-                  fluid
-                  className="home-img"
-                />
-              </div>
-            </Col>
-            <Col
-              md={6}
-              className="d-flex flex-column mt-md-0 mt-3 justify-content-center text-light"
-            >
-              <p className="text-light text1">
-                Ex grafica convertita al culto del codice. Junior full stack
-                developer con una passione per layout responsive, componenti
-                riutilizzabili e meme tecnici. <br />
-                Ho lasciato il mondo della stampa per abbracciare React, Java e
-                le gioie del debugging. <br />
-                Sto studiando Angular (con pazienza zen) e presto tradirò
-                Bootstrap con Tailwind. <br />
-                Se cerchi una developer che sa scrivere codice e anche riderci
-                sopra, ci siamo.
-              </p>
-            </Col>
-          </Row>
+            <Row className="align-items-center">
+              <Col md={4} className="text-center mb-4 mb-md-0">
+                <div className="image-wrapper">
+                  <Image
+                    src="/io.png"
+                    alt="Descrizione immagine"
+                    fluid
+                    className="home-img shadow"
+                    style={{ maxWidth: "300px" }}
+                  />
+                </div>
+              </Col>
+
+              <Col md={8} className="d-flex flex-column justify-content-center">
+                <p className="text-light fs-5">
+                  Ex grafica convertita al culto del codice. Junior full stack
+                  developer con una passione per layout responsive, componenti
+                  riutilizzabili e meme tecnici. <br />
+                  Ho lasciato il mondo della stampa per abbracciare React, Java
+                  e le gioie del debugging. <br />
+                  Sto studiando Angular (con pazienza zen) e presto tradirò
+                  Bootstrap con Tailwind. <br />
+                  Se cerchi una developer che sa scrivere codice e anche riderci
+                  sopra, ci siamo.
+                </p>
+              </Col>
+            </Row>
+          </div>
 
           <div className="tech-container">
-            <div className="tech-logos">
-              {duplicatedTechLogos.map((logo, index) => (
-                <img
-                  key={index}
-                  src={logo}
-                  alt="Technology Logo"
-                  className="tech-logo"
-                />
-              ))}
+            <div className="p-4 rounded-4 shadow-lg border border-secondary bg-opacity-10">
+              <h2 className="text-center text-light mb-4">Tech Stack</h2>
+              <div className="tech-logos">
+                {duplicatedTechLogos.map((logo, index) => (
+                  <img
+                    key={index}
+                    src={logo}
+                    alt="Technology Logo"
+                    className="tech-logo"
+                  />
+                ))}
+              </div>
             </div>
           </div>
 
