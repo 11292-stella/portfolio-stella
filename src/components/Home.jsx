@@ -174,29 +174,33 @@ const Home = function () {
           <Row className="justify-content-center mt-5 g-4">
             {progetti.map((progetto) => (
               <Col lg={4} md={6} key={progetto.id} className="d-flex">
-                <Card className="project-card h-100">
-                  <div className="card-img-container">
+                <Card className="project-card h-100 p-3 rounded-4 shadow-lg border border-secondary bg-opacity-10 text-light">
+                  <div className="card-img-container mb-3">
                     <Card.Img
                       variant="top"
                       src={progetto.immagine}
                       alt={progetto.titolo}
-                      className="card-img-top"
+                      className="card-img-top rounded-3"
+                      style={{ maxHeight: "200px", objectFit: "cover" }}
                     />
                   </div>
                   <Card.Body className="d-flex flex-column">
-                    <Card.Title className="card-title">
+                    <Card.Title className="card-title fs-4 text-center">
                       {progetto.titolo}
                     </Card.Title>
-                    <Card.Text className="card-text">
+                    <Card.Text className="card-text text-center">
                       {progetto.descrizione}
                     </Card.Text>
-                    <div className="card-techs mt-auto">
-                      <span>{progetto.tecnologie}</span>
+                    <div className="card-techs mt-auto text-center">
+                      <span className="badge bg-info text-dark">
+                        {progetto.tecnologie}
+                      </span>
                     </div>
                     <Button
                       href={progetto.link}
                       target="_blank"
-                      className="btn-project mt-3"
+                      className="btn-project mt-3 align-self-center"
+                      variant="outline-light"
                     >
                       Vai al progetto
                     </Button>
@@ -205,7 +209,6 @@ const Home = function () {
               </Col>
             ))}
           </Row>
-
           <h2 className="text-center mt-5">
             Il mio lato oscuro: Java & Back-End
           </h2>
