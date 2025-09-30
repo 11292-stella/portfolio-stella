@@ -60,7 +60,7 @@ span {
   }
 }
 
-/* Mobile: impila le sezioni */
+
 @media (max-width: 768px) {
   .cv-download-circle {
     margin-top: 2rem;
