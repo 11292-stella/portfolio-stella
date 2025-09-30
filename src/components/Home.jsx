@@ -13,86 +13,194 @@ const Home = function () {
   const progetti = [
     {
       id: 1,
+      categoria: "fullstack",
       titolo: "Sneaky Workout",
-      immagine: "/1p.png",
       descrizione:
-        "Web app full stack per allenamenti personalizzati e motivazionali. Un campo digitale dove disciplina e ironia si incontrano.",
-      tecnologie: "React, Bootstrap, Java, Spring Boot",
-      link: "https://front-project-personal-trainer.vercel.app/home",
+        "App per allenarsi di nascosto durante il lavoro. Frontend React, backend Spring Boot.",
+      immagine: "/img/sneakyworkout.png",
+      video: "/video/sneky.mp4",
+      tecnologie: "React, Spring Boot, PostgreSQL",
+      repo: "https://github.com/11292-stella/AppWeb-Sneacky-Workout",
+      link: "https://sneakyworkout.koyeb.app",
     },
     {
       id: 2,
       titolo: "DevGuide",
       immagine: "/pp.png",
       descrizione:
-        "Web app pensata come guida pratica e personale per ripassare concetti chiave dello sviluppo web. Leggera, utile e con un pizzico di ironia.",
+        "Guida pratica e personale per ripassare concetti chiave dello sviluppo web. Leggera, utile e con un pizzico di ironia.",
       tecnologie: "React, Bootstrap",
       link: "https://dev-guide-liart.vercel.app/home",
+      categoria: "frontend",
     },
     {
       id: 3,
       titolo: "Music play",
       immagine: "/2p.png",
       descrizione:
-        "Web app frontend sviluppata per consolidare le competenze acquisite, con focus sulla gestione dello stato tramite Redux.",
+        "Web app frontend con focus sulla gestione dello stato tramite Redux.",
       tecnologie: "React, Redux, Bootstrap",
       link: "https://lastproject-main.vercel.app/#home",
+      categoria: "frontend",
     },
     {
       id: 4,
       titolo: "Citywide weather",
       immagine: "/3p.png",
       descrizione:
-        "Web app meteo in tempo reale, sviluppata per esplorare React, chiamate API e gestione dello stato. Un primo passo concreto nel mondo frontend.",
+        "Web app meteo in tempo reale con chiamate API e gestione dello stato.",
       tecnologie: "React, Bootstrap, APIs",
       link: "https://nuovpro.vercel.app/",
+      categoria: "frontend",
     },
     {
       id: 5,
       titolo: "Libreria Horror",
       immagine: "/4p.png",
       descrizione:
-        "Vetrina digitale dedicata ai libri dell’orrore, realizzata nei primi passi del mio percorso. HTML, CSS e un pizzico di JavaScript.",
+        "Vetrina digitale dedicata ai libri dell’orrore. HTML, CSS e un pizzico di JavaScript.",
       tecnologie: "HTML5, CSS3, JavaScript",
       link: "https://h-r7wd-stellas-projects-76eb7045.vercel.app/",
+      categoria: "frontend",
     },
     {
       id: 6,
       titolo: "Netflix Clone",
       immagine: "/5p.png",
       descrizione:
-        "Web app ispirata a Netflix, sviluppata durante un workshop scolastico. Un esercizio pratico per esplorare React, chiamate API e design dell’interfaccia.",
+        "Web app ispirata a Netflix, con React e chiamate API per esplorare design e interfaccia.",
       tecnologie: "React, Bootstrap, APIs",
       link: "https://w8project-2k6o.vercel.app/",
+      categoria: "frontend",
     },
     {
       id: 7,
       titolo: "Cartoon Bistro",
       immagine: "/p6.png",
       descrizione:
-        "Sito vetrina per un ristorante immaginario ispirato ai cartoni animati. Creato durante le prime esperienze con Bootstrap, per esplorare layout responsive e design creativo.",
+        "Sito vetrina per un ristorante immaginario ispirato ai cartoni animati.",
       tecnologie: "HTML5, CSS3, Bootstrap",
       link: "https://week6-day2.vercel.app/#",
+      categoria: "frontend",
     },
     {
       id: 8,
       titolo: "Animazioni in Azione",
       immagine: "/7p.png",
       descrizione:
-        "Primo esperimento con animazioni CSS: transizioni, trasformazioni e piccoli effetti dinamici per rendere gli elementi più vivi e interattivi.",
+        "Primo esperimento con animazioni CSS: transizioni, trasformazioni e piccoli effetti dinamici.",
       tecnologie: "HTML5, CSS3",
       link: "https://w5d4-xqcw-stellas-projects-76eb7045.vercel.app/",
+      categoria: "frontend",
     },
     {
       id: 9,
       titolo: "Play to Mamory",
       immagine: "/8p.png",
       descrizione:
-        "Primo progetto JavaScript: interazioni, logica e piccoli script per trasformare una pagina statica in qualcosa di vivo e dinamico.",
+        "Primo progetto JavaScript: interazioni, logica e piccoli script per rendere la pagina dinamica.",
       tecnologie: "HTML5, CSS3, JavaScript",
       link: "https://mio-progetto-theta.vercel.app/",
+      categoria: "frontend",
+    },
+    // Esempio backend da aggiungere
+    {
+      id: 1,
+      categoria: "backend",
+      titolo: "Invio dati Gmail",
+      descrizione: "Backend per invio email con Spring Boot e validazione DTO.",
+      immagine: "/img/inviodatigmail.png", // verrà mostrata solo se video non presente
+      video: "/video/inviodatigmail.mp4", // se presente, sostituisce l'immagine
+      tecnologie: "Spring Boot, JavaMailSender",
+      repo: "https://github.com/11292-stella/Invio_dati_gmail",
     },
   ]
+
+  const fullstackProjects = progetti.filter((p) => p.categoria === "fullstack")
+  const frontendProjects = progetti.filter((p) => p.categoria === "frontend")
+  const backendProjects = progetti.filter((p) => p.categoria === "backend")
+
+  const renderProjects = (projects) => (
+    <Row className="justify-content-center mt-4 g-4">
+      {projects.map((progetto) => (
+        <Col lg={4} md={6} key={progetto.id} className="d-flex">
+          <Card className="project-card h-100 p-3 rounded-4 shadow-lg border border-secondary bg-opacity-10 text-light">
+            {/* VIDEO o IMMAGINE */}
+            <div className="card-img-container mb-3">
+              {progetto.video ? (
+                <div className="ratio ratio-16x9">
+                  {progetto.video.includes("youtube") ? (
+                    <iframe
+                      src={progetto.video}
+                      title={`Demo ${progetto.titolo}`}
+                      allowFullScreen
+                      style={{ borderRadius: "12px" }}
+                    ></iframe>
+                  ) : (
+                    <video
+                      controls
+                      style={{ borderRadius: "12px", width: "100%" }}
+                    >
+                      <source src={progetto.video} type="video/mp4" />
+                      Il tuo browser non supporta il video.
+                    </video>
+                  )}
+                </div>
+              ) : (
+                <Card.Img
+                  variant="top"
+                  src={progetto.immagine}
+                  alt={progetto.titolo}
+                  className="card-img-top rounded-3"
+                  style={{ maxHeight: "200px", objectFit: "cover" }}
+                />
+              )}
+            </div>
+
+            <Card.Body className="d-flex flex-column">
+              <Card.Title className="card-title fs-4 text-center">
+                {progetto.titolo}
+              </Card.Title>
+
+              <Card.Text className="card-text text-center">
+                {progetto.descrizione}
+              </Card.Text>
+
+              <div className="card-techs mt-auto text-center">
+                <span className="badge bg-info text-dark">
+                  {progetto.tecnologie}
+                </span>
+              </div>
+
+              {/* BOTTONI */}
+              <div className="d-flex justify-content-center gap-2 mt-3">
+                {progetto.repo && (
+                  <Button
+                    href={progetto.repo}
+                    target="_blank"
+                    className="btn-project"
+                    variant="outline-info"
+                  >
+                    Vai alla repository
+                  </Button>
+                )}
+                {progetto.link && (
+                  <Button
+                    href={progetto.link}
+                    target="_blank"
+                    className="btn-project"
+                    variant="outline-light"
+                  >
+                    Vai al progetto
+                  </Button>
+                )}
+              </div>
+            </Card.Body>
+          </Card>
+        </Col>
+      ))}
+    </Row>
+  )
 
   const techLogos = [
     "/logo/l11-Photoroom.png",
@@ -171,69 +279,31 @@ const Home = function () {
             pratica ciò che ho imparato e sperimentare nuove soluzioni.
           </p>
 
-          <Row className="justify-content-center mt-5 g-4">
-            {progetti.map((progetto) => (
-              <Col lg={4} md={6} key={progetto.id} className="d-flex">
-                <Card className="project-card h-100 p-3 rounded-4 shadow-lg border border-secondary bg-opacity-10 text-light">
-                  <div className="card-img-container mb-3">
-                    <Card.Img
-                      variant="top"
-                      src={progetto.immagine}
-                      alt={progetto.titolo}
-                      className="card-img-top rounded-3"
-                      style={{ maxHeight: "200px", objectFit: "cover" }}
-                    />
-                  </div>
-                  <Card.Body className="d-flex flex-column">
-                    <Card.Title className="card-title fs-4 text-center">
-                      {progetto.titolo}
-                    </Card.Title>
-                    <Card.Text className="card-text text-center">
-                      {progetto.descrizione}
-                    </Card.Text>
-                    <div className="card-techs mt-auto text-center">
-                      <span className="badge bg-info text-dark">
-                        {progetto.tecnologie}
-                      </span>
-                    </div>
-                    <Button
-                      href={progetto.link}
-                      target="_blank"
-                      className="btn-project mt-3 align-self-center"
-                      variant="outline-light"
-                    >
-                      Vai al progetto
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-            ))}
-          </Row>
-          <h2 className="text-center mt-5">
-            Il mio lato oscuro: Java & Back-End
-          </h2>
-          <p className=" text-light mt-4 text-center text1">
-            Ebbene sì… ho un lato oscuro. <br /> Dopo aver giocato con colori,
-            animazioni e layout scintillanti, ho deciso di esplorare il
-            back-end. <br />E cosa c’è di più oscuro, misterioso e affascinante
-            del Java? <br />
-            Il back-end è come una creatura notturna: lavora dietro le quinte,
-            lontano dai riflettori, <br /> in un mondo fatto di logica, server e
-            database. <br /> Non si mostra facilmente… ma lascia tracce. <br />{" "}
-            <br />
-            Se siete curiosi di scoprire cosa si cela nel buio, potete sbirciare
-            nel mio{" "}
-            <a
-              href="https://github.com/11292-stella"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              repository GitHub
-            </a>{" "}
-            lì troverete i miei esperimenti, i miei codici e forse… qualche
-            incantesimo Java. Perché si sa: <br /> <br />
-            Il front-end seduce, ma il back-end… trama nell’ombra. 😈
-          </p>
+          <div className="d-flex flex-column min-vh-100 home-color">
+            <Container className="flex-grow-1 py-5">
+              <h2 className="text-center mt-5">🔥 Progetti Full Stack</h2>
+              {renderProjects(fullstackProjects)}
+
+              <h2 className="text-center mt-5">🎨 Progetti Frontend</h2>
+              {renderProjects(frontendProjects)}
+
+              <h2 className="text-center mt-5">
+                😈 Il mio lato oscuro: Java & Back-End
+              </h2>
+              <p className=" text-light mt-4 text-center text1">
+                Ebbene sì… ho un lato oscuro. <br /> Dopo aver giocato con
+                colori, animazioni e layout scintillanti, ho deciso di esplorare
+                il back-end. <br />E cosa c’è di più oscuro, misterioso e
+                affascinante del Java? <br />
+                Il back-end è come una creatura notturna: lavora dietro le
+                quinte, lontano dai riflettori, <br /> in un mondo fatto di
+                logica, server e database. <br /> Non si mostra facilmente… ma
+                lascia tracce.
+              </p>
+
+              {renderProjects(backendProjects)}
+            </Container>
+          </div>
         </Container>
       </div>
     </>
