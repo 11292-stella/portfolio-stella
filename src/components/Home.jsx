@@ -109,10 +109,21 @@ const Home = function () {
       categoria: "backend",
       titolo: "Invio dati Gmail",
       descrizione: "Backend per invio email con Spring Boot e validazione DTO.",
-      immagine: "/img/inviodatigmail.png", // verrà mostrata solo se video non presente
-      video: "/video/inviodatigmail.mp4", // se presente, sostituisce l'immagine
+      immagine: "/img/inviodatigmail.png",
+      video: "/video/inviodatigmail.mp4",
       tecnologie: "Spring Boot, JavaMailSender",
       repo: "https://github.com/11292-stella/Invio_dati_gmail",
+    },
+    {
+      id: 2,
+      categoria: "backend",
+      titolo: "Gestione Viaggi",
+      descrizione:
+        "backend completo per la creazione e gestione di itinerari. Pensato per agenzie o app turistiche, permette di strutturare viaggi in modo modulare e sicuro.",
+      immagine: "/img/gestioneviaggi.png",
+      video: "/video/gestioneviaggi.mp4",
+      tecnologie: "Spring Boot, JavaMailSender",
+      repo: "https://github.com/11292-stella/Gestione_Viaggi",
     },
   ]
 
