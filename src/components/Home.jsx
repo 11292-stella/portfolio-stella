@@ -18,10 +18,10 @@ const Home = function () {
       descrizione:
         "App per allenarsi di nascosto durante il lavoro. Frontend React, backend Spring Boot.",
       immagine: "/img/sneakyworkout.png",
-      video: "/video/sneky.mp4",
+      video: "/video/sneaky.mp4",
       tecnologie: "React, Spring Boot, PostgreSQL",
       repo: "https://github.com/11292-stella/AppWeb-Sneacky-Workout",
-      link: "https://sneakyworkout.koyeb.app",
+      link: "https://front-project-personal-trainer.vercel.app/home",
     },
     {
       id: 2,
