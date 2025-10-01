@@ -125,6 +125,39 @@ const Home = function () {
       tecnologie: "Spring Boot, JavaMailSender",
       repo: "https://github.com/11292-stella/Gestione_Viaggi",
     },
+    {
+      id: 3,
+      categoria: "backend",
+      titolo: "Gestione eventi con prenotazione",
+      descrizione:
+        "Sistema backend per creare eventi e gestire prenotazioni utente, con logiche di capienza e ruoli.",
+      immagine: "/img/gestioneeventi.png",
+      video: "/video/gestioneeventi.mp4",
+      tecnologie: "Spring Boot, JavaMailSender",
+      repo: "https://github.com/11292-stella/gestione-eventi",
+    },
+    {
+      id: 4,
+      categoria: "backend",
+      titolo: "Based_security_project",
+      descrizione:
+        "Base backend per login sicuro, ruoli e token JWT. Pensata per essere riutilizzata in progetti futuri.",
+      immagine: "/img/Based_security_project.png",
+      video: "/video/Based_security_project.mp4",
+      tecnologie: "Spring Boot, JavaMailSender",
+      repo: "https://github.com/11292-stella/Based_security_project",
+    },
+    {
+      id: 5,
+      categoria: "backend",
+      titolo: "Sneaky Workout",
+      descrizione:
+        "App full stack per creare schede allenamento, interagire tra utenti e simulare acquisti fitness.",
+      immagine: "/img/Sneaky Workout.png",
+      video: "/video/Sneaky Workout.mp4",
+      tecnologie: "Spring Boot, JavaMailSender",
+      repo: "https://github.com/11292-stella/Prova_Progetto_Personal_Trainer",
+    },
   ]
 
   const fullstackProjects = progetti.filter((p) => p.categoria === "fullstack")
