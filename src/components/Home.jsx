@@ -25,6 +25,17 @@ const Home = function () {
     },
     {
       id: 2,
+      categoria: "fullstack",
+      titolo: "Impizza",
+      descrizione:
+        "Gestione ordini per pizzeria: interfaccia cliente e dashboard admin. Frontend Angular, backend Spring Boot.",
+      immagine: "/img/impizza.png",
+      video: "/video/impizza.mp4",
+      tecnologie: "Angular, Spring Boot, PostgreSQL, JWT",
+      repo: "https://github.com/11292-stella/impizza-frontend",
+    },
+    {
+      id: 2,
       titolo: "DevGuide",
       immagine: "/pp.png",
       descrizione:
