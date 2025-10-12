@@ -36,7 +36,7 @@ const NavBar = function () {
       <Container>
         <Navbar.Brand href="#home" className="d-flex align-items-center">
           <img
-            src="/logo.png"
+            src="/topo.png"
             width="70"
             height="60"
             className="d-inline-block align-middle"
