@@ -169,6 +169,17 @@ const Home = function () {
       tecnologie: "Spring Boot, JavaMailSender",
       repo: "https://github.com/11292-stella/Prova_Progetto_Personal_Trainer",
     },
+    {
+      id: 6,
+      categoria: "backend",
+      titolo: "Impizza",
+      descrizione:
+        "Backend per app di gestione ordini pizzeria: autenticazione JWT, ruoli, validazione e API REST.",
+      immagine: "/img/impizza-backend.png",
+      video: "/video/impizza-backend.mp4",
+      tecnologie: "Spring Boot, PostgreSQL, JWT",
+      repo: "https://github.com/11292-stella/impizza-backend",
+    },
   ]
 
   const fullstackProjects = progetti.filter((p) => p.categoria === "fullstack")
