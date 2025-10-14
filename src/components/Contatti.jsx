@@ -159,7 +159,7 @@ const Contatti = function () {
                   <Col md={4} className="text-center">
                     <div className="cv-download-circle d-flex flex-column align-items-center justify-content-center h-100">
                       <a
-                        href="/Stella-Marucelli-CV.pdf"
+                        href="/curriculum_cv_stella_marucelli.pdf"
                         download
                         className="btn btn-outline-info rounded-circle d-inline-flex align-items-center justify-content-center pulse"
                         style={{
