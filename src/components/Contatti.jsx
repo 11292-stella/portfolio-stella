@@ -1,8 +1,12 @@
+import React from "react"
 import { Container, Row, Col, Card, Button } from "react-bootstrap"
+import { useForm, ValidationError } from "@formspree/react"
 import "../styles/contatti.css"
 import "@fortawesome/fontawesome-free/css/all.min.css"
 
 const Contatti = function () {
+  const [state, handleSubmit] = useForm("mqaygord")
+
   return (
     <>
       <div className="d-flex flex-column min-vh-100 contatti-color">
@@ -106,7 +110,6 @@ const Contatti = function () {
 
               <Card className="p-5 rounded-4 shadow-lg border border-secondary bg-opacity-10 text-light mt-5">
                 <Row className="g-4 flex-column flex-md-row align-items-center">
-                  {/* Sezione testo */}
                   <Col md={8}>
                     <div className="text1 pe-md-4">
                       <h4 className="mb-4 fw-bold">Un CV, una storia</h4>
@@ -117,13 +120,11 @@ const Contatti = function () {
                         <br />e non ho creato l'app che rivoluziona il mondo
                         (ancora).
                       </p>
-
                       <p className="mb-4">
                         Ma ho una gran voglia di imparare,
                         <br />
                         migliorare e fare la mia parte.
                       </p>
-
                       <p className="mb-4">
                         Questo portfolio è il frutto di tante ore di studio,
                         <br />
@@ -132,7 +133,6 @@ const Contatti = function () {
                         perdita temporanea dell’uso di arti superiori
                         <br />e molto caffè.
                       </p>
-
                       <p className="mb-4">
                         Cerco un lavoro dove possa crescere, contribuire
                         <br />
@@ -141,7 +141,6 @@ const Contatti = function () {
                         per pagare l’affitto e concedermi una pizza ogni tanto
                         🍕.
                       </p>
-
                       <p className="mb-4">
                         Sono aperta a opportunità in tutta Italia:
                         <br />
@@ -149,7 +148,6 @@ const Contatti = function () {
                         <br />o anche il paesino sperduto dove il Wi-Fi prende
                         solo se stai in diagonale.
                       </p>
-
                       <p className="mb-0">
                         Se cerchi qualcuno che non sa tutto
                         <br />
@@ -158,7 +156,6 @@ const Contatti = function () {
                     </div>
                   </Col>
 
-                  {/* Sezione tondino */}
                   <Col md={4} className="text-center">
                     <div className="cv-download-circle d-flex flex-column align-items-center justify-content-center h-100">
                       <a
@@ -178,6 +175,68 @@ const Contatti = function () {
                     </div>
                   </Col>
                 </Row>
+              </Card>
+
+              {/* Form di contatto */}
+              <Card className="p-4 rounded-4 shadow-lg border border-secondary bg-opacity-10 text-light mt-5">
+                <Card.Body>
+                  <Card.Title className="text-center mb-4 fs-4">
+                    Scrivimi
+                  </Card.Title>
+                  <form onSubmit={handleSubmit}>
+                    <div className="mb-3">
+                      <label htmlFor="email" className="form-label">
+                        La tua email
+                      </label>
+                      <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        className="form-control"
+                        required
+                      />
+                      <ValidationError
+                        prefix="Email"
+                        field="email"
+                        errors={state.errors}
+                      />
+                    </div>
+
+                    <div className="mb-3">
+                      <label htmlFor="message" className="form-label">
+                        Messaggio
+                      </label>
+                      <textarea
+                        id="message"
+                        name="message"
+                        className="form-control"
+                        rows="5"
+                        required
+                      />
+                      <ValidationError
+                        prefix="Message"
+                        field="message"
+                        errors={state.errors}
+                      />
+                    </div>
+
+                    <div className="text-center">
+                      <button
+                        type="submit"
+                        disabled={state.submitting}
+                        className="btn btn-outline-info"
+                      >
+                        Invia
+                      </button>
+                    </div>
+
+                    {state.succeeded && (
+                      <p className="mt-3 text-light text-center">
+                        Grazie per il messaggio! Ti risponderò presto.
+                      </p>
+                    )}
+                  </form>
+                </Card.Body>
               </Card>
             </Col>
           </Row>
