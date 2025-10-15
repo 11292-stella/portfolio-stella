@@ -1,14 +1,17 @@
 import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
-import { NavLink } from "react-router-dom"
+import { useNavigate, useLocation } from "react-router-dom"
 import "../styles/navbar.css"
 import { useState, useEffect } from "react"
 
 const NavBar = function () {
   const [scrolled, setScrolled] = useState(false)
   const [expanded, setExpanded] = useState(false)
+  const navigate = useNavigate()
+  const location = useLocation()
 
+  // cambia colore navbar allo scroll
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -20,6 +23,28 @@ const NavBar = function () {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  // funzione per gestire lo scroll alle sezioni
+  const handleScrollToSection = (sectionId) => {
+    if (location.pathname !== "/home") {
+      // se non siamo in home, navighiamo lì prima
+      navigate("/home")
+      setExpanded(false)
+      setTimeout(() => {
+        const section = document.getElementById(sectionId)
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" })
+        }
+      }, 500) // piccolo delay per dare tempo al DOM di caricare
+    } else {
+      // se siamo già in home
+      const section = document.getElementById(sectionId)
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" })
+      }
+      setExpanded(false)
+    }
+  }
 
   return (
     <Navbar
@@ -34,7 +59,11 @@ const NavBar = function () {
       aria-label="Navigazione principale"
     >
       <Container>
-        <Navbar.Brand href="#home" className="d-flex align-items-center">
+        <Navbar.Brand
+          onClick={() => handleScrollToSection("home")}
+          className="d-flex align-items-center"
+          style={{ cursor: "pointer" }}
+        >
           <img
             src="/topo.png"
             width="70"
@@ -49,21 +78,27 @@ const NavBar = function () {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link
-              as={NavLink}
-              to="/home"
               className="text1"
-              activeClassName="active-link"
-              onClick={() => setExpanded(false)}
+              onClick={() => handleScrollToSection("about")}
             >
-              Home
+              About me
             </Nav.Link>
+
             <Nav.Link
-              as={NavLink}
-              to="/contatti"
               className="text1"
-              activeClassName="active-link"
-              onClick={() => setExpanded(false)}
+              onClick={() => handleScrollToSection("tech")}
             >
+              Tech
+            </Nav.Link>
+
+            <Nav.Link
+              className="text1"
+              onClick={() => handleScrollToSection("projects")}
+            >
+              Progetti
+            </Nav.Link>
+
+            <Nav.Link className="text1" onClick={() => navigate("/contatti")}>
               Contatti
             </Nav.Link>
           </Nav>

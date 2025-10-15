@@ -1,12 +1,4 @@
-import {
-  Container,
-  Row,
-  Col,
-  Image,
-  Card,
-  Carousel,
-  Button,
-} from "react-bootstrap"
+import { Container, Row, Col, Image, Card, Button } from "react-bootstrap"
 import "../styles/home.css"
 
 const Home = function () {
@@ -35,7 +27,7 @@ const Home = function () {
       repo: "https://github.com/11292-stella/impizza-frontend",
     },
     {
-      id: 2,
+      id: 3,
       titolo: "DevGuide",
       immagine: "/pp.png",
       descrizione:
@@ -45,7 +37,7 @@ const Home = function () {
       categoria: "frontend",
     },
     {
-      id: 3,
+      id: 4,
       titolo: "Music play",
       immagine: "/2p.png",
       descrizione:
@@ -55,7 +47,7 @@ const Home = function () {
       categoria: "frontend",
     },
     {
-      id: 4,
+      id: 5,
       titolo: "Citywide weather",
       immagine: "/3p.png",
       descrizione:
@@ -65,7 +57,7 @@ const Home = function () {
       categoria: "frontend",
     },
     {
-      id: 5,
+      id: 6,
       titolo: "Libreria Horror",
       immagine: "/4p.png",
       descrizione:
@@ -75,7 +67,7 @@ const Home = function () {
       categoria: "frontend",
     },
     {
-      id: 6,
+      id: 7,
       titolo: "Netflix Clone",
       immagine: "/5p.png",
       descrizione:
@@ -85,7 +77,7 @@ const Home = function () {
       categoria: "frontend",
     },
     {
-      id: 7,
+      id: 8,
       titolo: "Cartoon Bistro",
       immagine: "/p6.png",
       descrizione:
@@ -95,7 +87,7 @@ const Home = function () {
       categoria: "frontend",
     },
     {
-      id: 8,
+      id: 9,
       titolo: "Animazioni in Azione",
       immagine: "/7p.png",
       descrizione:
@@ -105,7 +97,7 @@ const Home = function () {
       categoria: "frontend",
     },
     {
-      id: 9,
+      id: 10,
       titolo: "Play to Mamory",
       immagine: "/8p.png",
       descrizione:
@@ -114,9 +106,8 @@ const Home = function () {
       link: "https://mio-progetto-theta.vercel.app/",
       categoria: "frontend",
     },
-    // Esempio backend da aggiungere
     {
-      id: 1,
+      id: 11,
       categoria: "backend",
       titolo: "Invio dati Gmail",
       descrizione: "Backend per invio email con Spring Boot e validazione DTO.",
@@ -126,55 +117,54 @@ const Home = function () {
       repo: "https://github.com/11292-stella/Invio_dati_gmail",
     },
     {
-      id: 2,
+      id: 12,
       categoria: "backend",
       titolo: "Gestione Viaggi",
       descrizione:
-        "backend completo per la creazione e gestione di itinerari. Pensato per agenzie o app turistiche, permette di strutturare viaggi in modo modulare e sicuro.",
+        "Backend completo per la creazione e gestione di itinerari turistici.",
       immagine: "/img/gestioneviaggi.png",
       video: "/video/gestioneviaggi.mp4",
       tecnologie: "Spring Boot, JavaMailSender",
       repo: "https://github.com/11292-stella/Gestione_Viaggi",
     },
     {
-      id: 3,
+      id: 13,
       categoria: "backend",
       titolo: "Gestione eventi con prenotazione",
       descrizione:
-        "Sistema backend per creare eventi e gestire prenotazioni utente, con logiche di capienza e ruoli.",
+        "Sistema backend per creare eventi e gestire prenotazioni utente.",
       immagine: "/img/gestioneeventi.png",
       video: "/video/gestioneeventi.mp4",
       tecnologie: "Spring Boot, JavaMailSender",
       repo: "https://github.com/11292-stella/gestione-eventi",
     },
     {
-      id: 4,
+      id: 14,
       categoria: "backend",
       titolo: "Based_security_project",
-      descrizione:
-        "Base backend per login sicuro, ruoli e token JWT. Pensata per essere riutilizzata in progetti futuri.",
+      descrizione: "Base backend per login sicuro, ruoli e token JWT.",
       immagine: "/img/Based_security_project.png",
       video: "/video/Based_security_project.mp4",
       tecnologie: "Spring Boot, JavaMailSender",
       repo: "https://github.com/11292-stella/Based_security_project",
     },
     {
-      id: 5,
+      id: 15,
       categoria: "backend",
-      titolo: "Sneaky Workout",
+      titolo: "Sneaky Workout (Backend)",
       descrizione:
-        "App full stack per creare schede allenamento, interagire tra utenti e simulare acquisti fitness.",
+        "App full stack per creare schede allenamento e gestire utenti.",
       immagine: "/img/Sneaky Workout.png",
       video: "/video/Sneaky Workout.mp4",
       tecnologie: "Spring Boot, JavaMailSender",
       repo: "https://github.com/11292-stella/Prova_Progetto_Personal_Trainer",
     },
     {
-      id: 6,
+      id: 16,
       categoria: "backend",
-      titolo: "Impizza",
+      titolo: "Impizza (Backend)",
       descrizione:
-        "Backend per app di gestione ordini pizzeria: autenticazione JWT, ruoli, validazione e API REST.",
+        "Backend per gestione ordini pizzeria con autenticazione JWT e API REST.",
       immagine: "/img/impizza-backend.png",
       video: "/video/impizza-backend.mp4",
       tecnologie: "Spring Boot, PostgreSQL, JWT",
@@ -191,7 +181,6 @@ const Home = function () {
       {projects.map((progetto) => (
         <Col lg={4} md={6} key={progetto.id} className="d-flex">
           <Card className="project-card h-100 p-3 rounded-4 shadow-lg border border-secondary bg-opacity-10 text-light">
-            {/* VIDEO o IMMAGINE */}
             <div className="card-img-container mb-3">
               {progetto.video ? (
                 <div className="ratio ratio-16x9">
@@ -208,7 +197,6 @@ const Home = function () {
                       style={{ borderRadius: "12px", width: "100%" }}
                     >
                       <source src={progetto.video} type="video/mp4" />
-                      Il tuo browser non supporta il video.
                     </video>
                   )}
                 </div>
@@ -224,40 +212,39 @@ const Home = function () {
             </div>
 
             <Card.Body className="d-flex flex-column">
-              <Card.Title className="card-title fs-4 text-center">
+              <Card.Title className="fs-4 text-center">
                 {progetto.titolo}
               </Card.Title>
 
-              <Card.Text className="card-text text-center">
+              <Card.Text className="text-center">
                 {progetto.descrizione}
               </Card.Text>
 
-              <div className="card-techs mt-auto text-center">
+              <div className="mt-auto text-center">
                 <span className="badge bg-info text-dark">
                   {progetto.tecnologie}
                 </span>
               </div>
 
-              {/* BOTTONI */}
               <div className="d-flex justify-content-center gap-2 mt-3">
                 {progetto.repo && (
                   <Button
                     href={progetto.repo}
                     target="_blank"
-                    className="btn-project"
                     variant="outline-info"
+                    className="btn-project"
                   >
-                    Vai alla repository
+                    Repository
                   </Button>
                 )}
                 {progetto.link && (
                   <Button
                     href={progetto.link}
                     target="_blank"
-                    className="btn-project"
                     variant="outline-light"
+                    className="btn-project"
                   >
-                    Vai al progetto
+                    Progetto
                   </Button>
                 )}
               </div>
@@ -286,9 +273,10 @@ const Home = function () {
   const duplicatedTechLogos = [...techLogos, ...techLogos]
 
   return (
-    <>
-      <div className="d-flex flex-column min-vh-100 home-color">
-        <Container className="flex-grow-1 py-5">
+    <div className="d-flex flex-column min-vh-100 home-color">
+      <Container className="flex-grow-1 py-5">
+        {/* HOME / ABOUT */}
+        <section id="about">
           <div className="p-4 rounded-4 shadow-lg border mt-5 border-secondary bg-opacity-10">
             <h1 className="text-center mb-4">Ctrl + Me = Portfolio</h1>
 
@@ -297,7 +285,7 @@ const Home = function () {
                 <div className="image-wrapper">
                   <Image
                     src="/io.png"
-                    alt="Descrizione immagine"
+                    alt="Foto profilo"
                     fluid
                     className="home-img shadow"
                     style={{ maxWidth: "300px" }}
@@ -320,8 +308,11 @@ const Home = function () {
               </Col>
             </Row>
           </div>
+        </section>
 
-          <div className="tech-container">
+        {/* TECH */}
+        <section id="tech">
+          <div className="tech-container mt-5">
             <div className="p-4 rounded-4 shadow-lg border border-secondary bg-opacity-10">
               <h2 className="text-center text-light mb-4">Tech Stack</h2>
               <div className="tech-logos">
@@ -336,43 +327,29 @@ const Home = function () {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* PROJECTS */}
+        <section id="projects">
+          <h2 className="text-center mt-5">🔥 Progetti Full Stack</h2>
+          {renderProjects(fullstackProjects)}
+
+          <h2 className="text-center mt-5">🎨 Progetti Frontend</h2>
+          {renderProjects(frontendProjects)}
 
           <h2 className="text-center mt-5">
-            Qui è dove le idee prendono forma
+            😈 Il mio lato oscuro: Java & Back-End
           </h2>
-          <p className="text-light mb-4 text-center text1">
-            Questi sono alcuni dei progetti che ho sviluppato per mettere in
-            pratica ciò che ho imparato e sperimentare nuove soluzioni.
+          <p className="text-light mt-4 text-center text1">
+            Dopo aver giocato con colori, animazioni e layout scintillanti, ho
+            deciso di esplorare il back-end. E cosa c’è di più misterioso e
+            affascinante del Java?
           </p>
-
-          <div className="d-flex flex-column min-vh-100 home-color">
-            <Container className="flex-grow-1 py-5">
-              <h2 className="text-center mt-5">🔥 Progetti Full Stack</h2>
-              {renderProjects(fullstackProjects)}
-
-              <h2 className="text-center mt-5">🎨 Progetti Frontend</h2>
-              {renderProjects(frontendProjects)}
-
-              <h2 className="text-center mt-5">
-                😈 Il mio lato oscuro: Java & Back-End
-              </h2>
-              <p className=" text-light mt-4 text-center text1">
-                Ebbene sì… ho un lato oscuro. <br /> Dopo aver giocato con
-                colori, animazioni e layout scintillanti, ho deciso di esplorare
-                il back-end. <br />E cosa c’è di più oscuro, misterioso e
-                affascinante del Java? <br />
-                Il back-end è come una creatura notturna: lavora dietro le
-                quinte, lontano dai riflettori, <br /> in un mondo fatto di
-                logica, server e database. <br /> Non si mostra facilmente… ma
-                lascia tracce.
-              </p>
-
-              {renderProjects(backendProjects)}
-            </Container>
-          </div>
-        </Container>
-      </div>
-    </>
+          {renderProjects(backendProjects)}
+        </section>
+      </Container>
+    </div>
   )
 }
+
 export default Home
