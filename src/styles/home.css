@@ -150,3 +150,19 @@ p {
     transform: translateX(-100%);
   }
 }
+
+#skills ul li {
+  margin-bottom: 6px;
+
+  font-family: "Mystery Quest", system-ui;
+  font-size: 1.1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+  color: aliceblue;
+}
+
+#skills h5 {
+  margin-bottom: 10px;
+  font-family: "Emilys Candy", serif;
+  font-size: 2rem;
+  color: rgb(151, 208, 244);
+}

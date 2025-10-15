@@ -90,6 +90,12 @@ const NavBar = function () {
             >
               Tech
             </Nav.Link>
+            <Nav.Link
+              className="text1"
+              onClick={() => handleScrollToSection("skills")}
+            >
+              Skill
+            </Nav.Link>
 
             <Nav.Link
               className="text1"

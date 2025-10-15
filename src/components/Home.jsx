@@ -329,6 +329,47 @@ const Home = function () {
           </div>
         </section>
 
+        {/* SKILLS */}
+        <section id="skills">
+          <div className="p-4 mt-5 rounded-4 shadow-lg border border-secondary bg-opacity-10">
+            <h2 className="text-center text-light mb-4">💪 SKILLS</h2>
+
+            <Row className="justify-content-center text-center text-light">
+              <Col md={4}>
+                <h5 className="text-info">Frontend</h5>
+                <ul className="list-unstyled">
+                  <li>React + Redux</li>
+                  <li>Angular (in corso)</li>
+                  <li>Bootstrap / Tailwind CSS</li>
+                  <li>Responsive Design</li>
+                  <li>UX/UI e ottimizzazione layout</li>
+                </ul>
+              </Col>
+
+              <Col md={4}>
+                <h5 className="text-info">Backend</h5>
+                <ul className="list-unstyled">
+                  <li>Spring Boot + REST API</li>
+                  <li>Autenticazione JWT</li>
+                  <li>Gestione Database (PostgreSQL)</li>
+                  <li>DTO, Validazioni e Eccezioni custom</li>
+                  <li>Invio email e sicurezza base</li>
+                </ul>
+              </Col>
+
+              <Col md={4}>
+                <h5 className="text-info">Altro</h5>
+                <ul className="list-unstyled">
+                  <li>Versionamento Git / GitHub</li>
+                  <li>Metodologia Agile / Scrum</li>
+                  <li>design creativo</li>
+                  <li>Problem solving e debugging</li>
+                </ul>
+              </Col>
+            </Row>
+          </div>
+        </section>
+
         {/* PROJECTS */}
         <section id="projects">
           <h2 className="text-center mt-5">🔥 Progetti Full Stack</h2>
