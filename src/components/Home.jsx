@@ -27,6 +27,16 @@ const Home = function () {
       repo: "https://github.com/11292-stella/impizza-frontend",
     },
     {
+      id: 4,
+      titolo: "Sleepy Halloween",
+      immagine: "/sleepy_halloween.png",
+      descrizione:
+        "Un mini-gioco a tema Halloween sviluppato con React, TypeScript e Vite. Un'esperienza spettrale e divertente per celebrare la notte più paurosa dell'anno.",
+      tecnologie: "React, TypeScript, Vite",
+      link: "https://sleepy-halloween.vercel.app/",
+      categoria: "frontend",
+    },
+    {
       id: 3,
       titolo: "DevGuide",
       immagine: "/pp.png",
