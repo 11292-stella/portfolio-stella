@@ -180,9 +180,21 @@ const Home = function () {
       tecnologie: "Spring Boot, PostgreSQL, JWT",
       repo: "https://github.com/11292-stella/impizza-backend",
     },
+    {
+      id: 17,
+      categoria: "flutter",
+      titolo: "Grocery List app",
+      descrizione:
+        "App Flutter per creare e gestire liste di cose da fare, chat e maps",
+      immagine: "/img/app_grocery.png",
+      video: "/video/app grocery.mp4",
+      tecnologie: "Flutter dart, firebase",
+      repo: "https://github.com/11292-stella/Grocery_app",
+    },
   ]
 
   const fullstackProjects = progetti.filter((p) => p.categoria === "fullstack")
+  const flutterProjects = progetti.filter((p) => p.categoria === "flutter")
   const frontendProjects = progetti.filter((p) => p.categoria === "frontend")
   const backendProjects = progetti.filter((p) => p.categoria === "backend")
 
@@ -384,6 +396,9 @@ const Home = function () {
         <section id="projects">
           <h2 className="text-center mt-5">🔥 Progetti Full Stack</h2>
           {renderProjects(fullstackProjects)}
+
+          <h2 className="text-center mt-5">🎨 Progetti Flutter</h2>
+          {renderProjects(flutterProjects)}
 
           <h2 className="text-center mt-5">🎨 Progetti Frontend</h2>
           {renderProjects(frontendProjects)}
