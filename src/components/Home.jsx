@@ -188,8 +188,52 @@ const Home = function () {
         "App Flutter per creare e gestire liste di cose da fare, chat e maps",
       immagine: "/img/app_grocery.png",
       video: "/video/app grocery.mp4",
-      tecnologie: "Flutter dart, firebase",
+      tecnologie: "Flutter dart, firebase, Riverpod",
       repo: "https://github.com/11292-stella/Grocery_app",
+    },
+    {
+      id: 18,
+      categoria: "flutter",
+      titolo: "Flutter Quiz app",
+      descrizione:
+        "App Flutter con quiz a scelta multipla e feedback visivo finale",
+      immagine: "/img/Flutter Quiz app.png",
+      video: "/video/seconda_app_Flutter_Quiz.mp4",
+      tecnologie: "Flutter dart",
+      repo: "hhttps://github.com/11292-stella/Quiz_Flutter",
+    },
+     {
+      id: 19,
+      categoria: "flutter",
+      titolo: "Calendario dell'avvento",
+      descrizione:
+        "App Flutter calendario dell'avvento con finestrelle interattive che narrano storie, credenze e tradizioni natalizie da tutto il mondo",
+      immagine: "/img/calendario dell'avvento.png",
+      video: "/video/calendario dell'avvento.mp4",
+      tecnologie: "Flutter dart",
+      repo: "https://github.com/11292-stella/christmas_calendar",
+    },
+    {
+      id: 20,
+      categoria: "flutter",
+      titolo: "Cooking app",
+      descrizione:
+        "App Flutter con categorie di vari tipi di cucina, ricette e ingredienti",
+      immagine: "/img/Cooking app.png",
+      video: "/video/Cooking app.mp4",
+      tecnologie: "Flutter dart",
+      repo: "https://github.com/11292-stella/cooking_app",
+    },
+    {
+      id: 21,
+      categoria: "flutter",
+      titolo: "SmartBudget app",
+      descrizione:
+        "App Flutter per gestire entrate e uscite, con grafici e analisi delle spese",
+      immagine: "/img/SmartBudget.png",
+      video: "/video/SmartBudget.mp4",
+      tecnologie: "Flutter dart",
+      repo: "https://github.com/11292-stella/SmartBudget",
     },
   ]
 
@@ -290,6 +334,7 @@ const Home = function () {
     "/logo/l2-Photoroom.png",
     "/logo/l1-Photoroom.png",
     "/logo/11-Photoroom.png",
+    "/logo/Flutter_logo.svg.png",
   ]
 
   const duplicatedTechLogos = [...techLogos, ...techLogos]
@@ -361,6 +406,7 @@ const Home = function () {
                 <h5 className="text-info">Frontend</h5>
                 <ul className="list-unstyled">
                   <li>React + Redux</li>
+                  <li>Flutter + Riverpod</li>
                   <li>Angular (in corso)</li>
                   <li>Bootstrap / Tailwind CSS</li>
                   <li>Responsive Design</li>
