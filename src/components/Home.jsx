@@ -4,19 +4,18 @@ import "../styles/home.css"
 const Home = function () {
 
   // ── QA DATA ──────────────────────────────────────────────────────────────
-  const qaStats = [
-    { value: "47+", label: "Bug Documentati" },
-    { value: "34+", label: "Fix Confermati" },
-    { value: "72%", label: "Impatto Diretto" },
-    { value: "8+",  label: "Bug Critici Analizzati" },
+ const qaStats = [
+  { value: "47+", label: "Bug Documentati" },
+  { value: "34+", label: "Fix Confermati" },
+  { value: "72%", label: "Impatto Diretto" },
+  { value: "8+",  label: "Bug Critici Analizzati" },
 
-    // NEW AUDIT STATS
+  // ENTERPRISE AUDIT
   { value: "19", label: "Articoli Auditati" },
   { value: "4", label: "Sezioni Bocciate" },
-  { value: "12+", label: "Percorsi Errati Trovati" },
-  { value: "AI", label: "Knowledge Risk Analysis" },
-
-  ]
+  { value: "12+", label: "Percorsi Errati" },
+  { value: "AI", label: "Knowledge Risk" },
+]
 
   const caseStudies = [
     {
@@ -47,6 +46,8 @@ const Home = function () {
       badge: "info",
     },
   ]
+
+  
 
    // ── NEW ENTERPRISE AUDIT DATA ────────────────────────────────────────────
 const auditProjects = [
@@ -201,12 +202,28 @@ const auditProjects = [
               </Col>
               <Col md={8} className="d-flex flex-column justify-content-center">
                 <p className="text-light fs-5">
-                  Ex grafica convertita al culto del codice e poi al culto dei bug report.
-Junior full stack developer con esperienza reale in QA: ho testato sistemi in produzione, trovato crash Android, loop infiniti e localizzazioni ballerine, e li ho documentati tutti con santa pazienza.
-Di giorno scrivo componenti React e API Spring Boot. Di notte sospetto che ogni software nasconda almeno tre bug critici.
-Ho studiato Flutter (e sopravvissuto a Dart) e presto tradirò Java con Node.js.
-Se cerchi una developer che sa costruire e distruggere software con metodo, ci siamo.
-                </p>
+  Ex grafica convertita al culto del codice e poi al culto dei bug report.
+
+  Full stack developer con esperienza pratica in QA, debugging enterprise
+  e audit documentale orientato ad AI e UX.
+
+  Ho lavorato su sistemi reali analizzando crash Android, loop infiniti,
+  problemi di localizzazione, regressioni cross-app e discrepanze tra
+  documentazione e interfaccia reale.
+
+  Oltre allo sviluppo frontend e backend, mi occupo di:
+  verifica funzionale,
+  investigazione bug,
+  testing operativo,
+  auditing di Knowledge Base enterprise
+  e analisi del rischio AI nella documentazione tecnica.
+
+  Di giorno scrivo componenti React, API Spring Boot e applicazioni Flutter.
+  Di notte sospetto che ogni software nasconda almeno tre bug critici.
+
+  Se cerchi una developer che sa costruire, analizzare e mettere in discussione
+  un software con metodo, ci siamo.
+</p>
               </Col>
             </Row>
           </div>
@@ -228,42 +245,67 @@ Se cerchi una developer che sa costruire e distruggere software con metodo, ci s
 
         {/* SKILLS */}
         <section id="skills">
-          <div className="p-4 mt-5 rounded-4 shadow-lg border border-secondary bg-opacity-10">
-            <h2 className="text-center text-light mb-4">💪 SKILLS</h2>
-            <Row className="justify-content-center text-center text-light">
-              <Col md={4}>
-                <h5 className="text-info">Frontend</h5>
-                <ul className="list-unstyled">
-                  <li>React + Redux</li>
-                  <li>Flutter + Riverpod</li>
-                  <li>Angular (in corso)</li>
-                  <li>Bootstrap / Tailwind CSS</li>
-                  <li>Responsive Design</li>
-                  <li>UX/UI e ottimizzazione layout</li>
-                </ul>
-              </Col>
-              <Col md={4}>
-                <h5 className="text-info">Backend</h5>
-                <ul className="list-unstyled">
-                  <li>Spring Boot + REST API</li>
-                  <li>Autenticazione JWT</li>
-                  <li>Gestione Database (PostgreSQL)</li>
-                  <li>DTO, Validazioni e Eccezioni custom</li>
-                  <li>Invio email e sicurezza base</li>
-                </ul>
-              </Col>
-              <Col md={4}>
-                <h5 className="text-info">Altro</h5>
-                <ul className="list-unstyled">
-                  <li>Versionamento Git / GitHub</li>
-                  <li>Metodologia Agile / Scrum</li>
-                  <li>Design creativo</li>
-                  <li>Problem solving e debugging</li>
-                </ul>
-              </Col>
-            </Row>
-          </div>
-        </section>
+    <p className="text1 text-center mb-5">
+      Sviluppo software, QA operativo, debugging enterprise
+      e analisi documentale orientata all'esperienza utente.
+    </p>
+
+    <Row className="justify-content-center text-center text-light">
+
+      <Col md={3}>
+        <h5 className="text-info">Frontend</h5>
+
+        <ul className="list-unstyled">
+          <li>React + Redux</li>
+          <li>Flutter + Riverpod</li>
+          <li>Angular (in corso)</li>
+          <li>Bootstrap / Tailwind CSS</li>
+          <li>Responsive Design</li>
+          <li>UX/UI e ottimizzazione layout</li>
+        </ul>
+      </Col>
+
+      <Col md={3}>
+        <h5 className="text-info">Backend</h5>
+
+        <ul className="list-unstyled">
+          <li>Spring Boot + REST API</li>
+          <li>Autenticazione JWT</li>
+          <li>Gestione Database PostgreSQL</li>
+          <li>DTO e validazioni custom</li>
+          <li>Gestione sicurezza base</li>
+        </ul>
+      </Col>
+
+      <Col md={3}>
+        <h5 className="text-info">QA & Debug</h5>
+
+        <ul className="list-unstyled">
+          <li>Regression Testing</li>
+          <li>APK Troubleshooting</li>
+          <li>Localization Testing</li>
+          <li>Cross-platform testing</li>
+          <li>Bug investigation</li>
+          <li>Release verification</li>
+        </ul>
+      </Col>
+
+      <Col md={3}>
+        <h5 className="text-info">Enterprise Audit</h5>
+
+        <ul className="list-unstyled">
+          <li>Knowledge Base Audit</li>
+          <li>UX Documentation Review</li>
+          <li>AI Knowledge Risk Analysis</li>
+          <li>Terminology Simplification</li>
+          <li>UI / Documentation Validation</li>
+          <li>Workflow Analysis</li>
+        </ul>
+      </Col>
+
+    </Row>
+</section>
+
 
         {/* QA IMPACT DASHBOARD */}
         <section id="qa">
