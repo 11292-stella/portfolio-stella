@@ -9,6 +9,13 @@ const Home = function () {
     { value: "34+", label: "Fix Confermati" },
     { value: "72%", label: "Impatto Diretto" },
     { value: "8+",  label: "Bug Critici Analizzati" },
+
+    // NEW AUDIT STATS
+  { value: "19", label: "Articoli Auditati" },
+  { value: "4", label: "Sezioni Bocciate" },
+  { value: "12+", label: "Percorsi Errati Trovati" },
+  { value: "AI", label: "Knowledge Risk Analysis" },
+
   ]
 
   const caseStudies = [
@@ -40,6 +47,51 @@ const Home = function () {
       badge: "info",
     },
   ]
+
+   // ── NEW ENTERPRISE AUDIT DATA ────────────────────────────────────────────
+const auditProjects = [
+  {
+    title: "Admin Ristoratore Audit",
+    tipo: "Documentation QA",
+    problema:
+      "Knowledge Base piena di contenuti tecnici fuori target per utenti business.",
+    causa:
+      "Mix tra documentazione developer, installer e admin ristorante.",
+    tool:
+      "UI verification, percorso funzionale, audit AI, testing operativo",
+    output:
+      "Audit completo su 19 articoli con discrepanze UI, percorsi inesistenti e ottimizzazione AI.",
+    badge: "primary",
+  },
+
+  {
+    title: "AI Knowledge Risk Analysis",
+    tipo: "AI Documentation Review",
+    problema:
+      "L'assistente AI poteva indicizzare percorsi errati e documentazione tecnica.",
+    causa:
+      "Cross-link verso sezioni developer e contenuti troppo vaghi.",
+    tool:
+      "Semantic review, UX writing, navigazione reale piattaforma",
+    output:
+      "Identificati rischi di loop IA, contenuti fuori target e articoli non pubblicabili.",
+    badge: "danger",
+  },
+
+  {
+    title: "Console UX Documentation",
+    tipo: "UX & Technical Writing",
+    problema:
+      "Documentazione scritta come manuale tecnico invece che guida operativa.",
+    causa:
+      "Uso eccessivo di termini infrastrutturali e stack tecnologico.",
+    tool:
+      "Content audit, terminology review, workflow analysis",
+    output:
+      "Traduzione dei concetti tecnici in linguaggio business-oriented per ristoratori.",
+    badge: "info",
+  },
+]
 
   const testingActivities = [
     { icon: "🔁", label: "Regression Testing", desc: "Verifica sistematica dopo ogni rilascio" },
@@ -337,6 +389,144 @@ Se cerchi una developer che sa costruire e distruggere software con metodo, ci s
             ))}
           </Row>
         </section>
+
+        {/* ENTERPRISE DOCUMENTATION AUDIT */}
+<section id="enterprise-audit">
+  <h2 className="text-center mt-5">
+    📚 Knowledge Base & AI Audit
+  </h2>
+
+  <p className="text1 text-center mt-2">
+    Audit reali su Knowledge Base enterprise:
+    verifica UI, documentazione tecnica,
+    rischio AI e coerenza dei percorsi.
+  </p>
+
+  <Row className="justify-content-center mt-4 g-4">
+    {auditProjects.map((study, index) => (
+      <Col key={index} lg={4} md={6} className="d-flex">
+        <Card
+          className="h-100 p-4 rounded-4 shadow-lg border border-secondary text-light"
+          style={{
+            backgroundColor: "rgba(255,255,255,0.05)",
+            transition: "transform 0.3s ease, border-color 0.3s ease",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = "scale(1.02)"
+            e.currentTarget.style.borderColor = "rgb(151, 208, 244)"
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = "scale(1)"
+            e.currentTarget.style.borderColor = ""
+          }}
+        >
+          <Card.Body className="d-flex flex-column">
+
+            {/* Badge tipo */}
+            <span
+              className={`badge bg-${study.badge} mb-3 align-self-start`}
+              style={{
+                fontFamily: "'Mystery Quest', system-ui",
+                letterSpacing: "0.1em",
+              }}
+            >
+              {study.tipo}
+            </span>
+
+            <Card.Title
+              style={{
+                fontFamily: "'Emilys Candy', serif",
+                fontSize: "1.4rem",
+                color: "rgb(151, 208, 244)",
+                textShadow: "2px 2px 4px rgba(0,0,0,0.7)",
+              }}
+            >
+              {study.title}
+            </Card.Title>
+
+            <div
+              className="mt-3 d-flex flex-column gap-3"
+              style={{
+                fontFamily: "'Mystery Quest', system-ui",
+                fontSize: "0.9rem",
+              }}
+            >
+
+              <div>
+                <span
+                  className="text-danger text2 fw-bold"
+                  style={{ letterSpacing: "0.1em" }}
+                >
+                  🐛 Problema:
+                </span>
+
+                <span
+                  className="text-center text2"
+                  style={{ letterSpacing: "0.1em" }}
+                >
+                  {" "}
+                  {study.problema}
+                </span>
+              </div>
+
+              <div>
+                <span
+                  className="text-danger text2 fw-bold"
+                  style={{ letterSpacing: "0.1em" }}
+                >
+                  🔎 Causa:
+                </span>
+
+                <span
+                  className="text-center text2"
+                  style={{ letterSpacing: "0.1em" }}
+                >
+                  {" "}
+                  {study.causa}
+                </span>
+              </div>
+
+              <div>
+                <span
+                  className="text-warning text2 fw-bold"
+                  style={{ letterSpacing: "0.1em" }}
+                >
+                  🛠️ Tool usati:
+                </span>
+
+                <span
+                  className="text-info text2"
+                  style={{ letterSpacing: "0.1em" }}
+                >
+                  {" "}
+                  {study.tool}
+                </span>
+              </div>
+
+              <div className="mt-auto pt-2 border-top border-secondary">
+                <span
+                  className="text-success text2 fw-bold"
+                  style={{ letterSpacing: "0.1em" }}
+                >
+                  📄 Output:
+                </span>
+
+                <span
+                  className="text-center text2"
+                  style={{ letterSpacing: "0.1em" }}
+                >
+                  {" "}
+                  {study.output}
+                </span>
+              </div>
+
+            </div>
+          </Card.Body>
+        </Card>
+      </Col>
+    ))}
+  </Row>
+</section>
 
         {/* PROJECTS */}
         <section id="projects">
