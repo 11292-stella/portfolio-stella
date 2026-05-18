@@ -47,7 +47,7 @@ const Home = function () {
     },
   ]
 
-  
+
 
    // ── NEW ENTERPRISE AUDIT DATA ────────────────────────────────────────────
 const auditProjects = [
@@ -309,6 +309,7 @@ const auditProjects = [
 
         {/* QA IMPACT DASHBOARD */}
         <section id="qa">
+          <div id="enterprise-audit"></div>
           <h2 className="text-center mt-5">🔍 QA Experience</h2>
           <p className="text1 text-center mt-2">
             Analisi su sistemi reali: bug documentati, regressioni verificate, fix confermati.

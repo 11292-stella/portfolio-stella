@@ -76,38 +76,65 @@ const NavBar = function () {
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link
-              className="text1"
-              onClick={() => handleScrollToSection("about")}
-            >
-              About me
-            </Nav.Link>
+         <Nav className="ms-auto align-items-lg-center gap-lg-3">
 
-            <Nav.Link
-              className="text1"
-              onClick={() => handleScrollToSection("tech")}
-            >
-              Tech
-            </Nav.Link>
-            <Nav.Link
-              className="text1"
-              onClick={() => handleScrollToSection("skills")}
-            >
-              Skill
-            </Nav.Link>
+  {/* ABOUT */}
+  <Nav.Link
+    className="text1"
+    onClick={() => handleScrollToSection("about")}
+  >
+    About
+  </Nav.Link>
 
-            <Nav.Link
-              className="text1"
-              onClick={() => handleScrollToSection("projects")}
-            >
-              Progetti
-            </Nav.Link>
+  {/* TECH */}
+  <Nav.Link
+    className="text1"
+    onClick={() => handleScrollToSection("tech")}
+  >
+    Stack
+  </Nav.Link>
 
-            <Nav.Link className="text1" onClick={() => navigate("/contatti")}>
-              Contatti
-            </Nav.Link>
-          </Nav>
+  {/* SKILLS */}
+  <Nav.Link
+    className="text1"
+    onClick={() => handleScrollToSection("skills")}
+  >
+    Skills
+  </Nav.Link>
+
+  {/* QA */}
+  <Nav.Link
+    className="text1"
+    onClick={() => handleScrollToSection("qa")}
+  >
+    QA
+  </Nav.Link>
+
+  {/* CASE STUDIES */}
+  <Nav.Link
+    className="text1"
+    onClick={() => handleScrollToSection("case-studies")}
+  >
+    Cases
+  </Nav.Link>
+
+  {/* PROJECTS */}
+  <Nav.Link
+    className="text1"
+    onClick={() => handleScrollToSection("projects")}
+  >
+    Projects
+  </Nav.Link>
+
+  {/* CONTACT */}
+  <Nav.Link
+    className="text1"
+    onClick={() => navigate("/contatti")}
+  >
+    Contact
+  </Nav.Link>
+
+</Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
