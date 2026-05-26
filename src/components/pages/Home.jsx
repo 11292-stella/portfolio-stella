@@ -130,14 +130,15 @@ const Home = function () {
                 </ul>
               </Col>
               <Col md={4}>
-                <h5 className="text-info">Altro</h5>
+                <h5 className="text-info">Testing</h5>
                 <ul className="list-unstyled">
-                  <li>Versionamento Git / GitHub</li>
-                  <li>Metodologia Agile / Scrum</li>
-                  <li>Design creativo</li>
-                  <li>Problem solving e debugging</li>
+                  <li>Test Funzionali & di Regressione</li>
+<li>Security Testing (XSS/Injection)</li>
+<li>APK Testing & ADB/Logcat</li>
+<li>Test di Localizzazione (i18n)</li>
                 </ul>
               </Col>
+              
             </Row>
           </div>
         </section>
