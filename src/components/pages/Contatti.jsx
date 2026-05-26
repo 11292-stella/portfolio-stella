@@ -1,7 +1,7 @@
-import React from "react"
+
 import { Container, Row, Col, Card, Button } from "react-bootstrap"
 import { useForm, ValidationError } from "@formspree/react"
-import "../styles/contatti.css"
+import "../../styles/contatti.css"
 import "@fortawesome/fontawesome-free/css/all.min.css"
 
 const Contatti = function () {

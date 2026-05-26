@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
 import { useNavigate, useLocation } from "react-router-dom"
 import "../styles/navbar.css"
+
 import { useState, useEffect } from "react"
 
 const NavBar = function () {
@@ -11,39 +12,29 @@ const NavBar = function () {
   const navigate = useNavigate()
   const location = useLocation()
 
-  // cambia colore navbar allo scroll
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true)
-      } else {
-        setScrolled(false)
-      }
-    }
+    const handleScroll = () => setScrolled(window.scrollY > 50)
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  // funzione per gestire lo scroll alle sezioni
+  // Per i link About / Stack / Skills che scrollano nelle sezioni di Home
   const handleScrollToSection = (sectionId) => {
+    setExpanded(false)
     if (location.pathname !== "/home") {
-      // se non siamo in home, navighiamo lì prima
       navigate("/home")
-      setExpanded(false)
       setTimeout(() => {
-        const section = document.getElementById(sectionId)
-        if (section) {
-          section.scrollIntoView({ behavior: "smooth" })
-        }
-      }, 500) // piccolo delay per dare tempo al DOM di caricare
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" })
+      }, 500)
     } else {
-      // se siamo già in home
-      const section = document.getElementById(sectionId)
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth" })
-      }
-      setExpanded(false)
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" })
     }
+  }
+
+  // Per i link che navigano verso pagine dedicate
+  const handleNavigate = (path) => {
+    setExpanded(false)
+    navigate(path)
   }
 
   return (
@@ -53,14 +44,12 @@ const NavBar = function () {
       variant="dark"
       expanded={expanded}
       onToggle={() => setExpanded(!expanded)}
-      className={`py-3 transition-nav ${
-        scrolled || expanded ? "navColor" : "bg-transparent"
-      }`}
+      className={`py-3 transition-nav ${scrolled || expanded ? "navColor" : "bg-transparent"}`}
       aria-label="Navigazione principale"
     >
       <Container>
         <Navbar.Brand
-          onClick={() => handleScrollToSection("home")}
+          onClick={() => handleScrollToSection("about")}
           className="d-flex align-items-center"
           style={{ cursor: "pointer" }}
         >
@@ -76,65 +65,34 @@ const NavBar = function () {
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-         <Nav className="ms-auto align-items-lg-center gap-lg-3">
+          <Nav className="ms-auto align-items-lg-center gap-lg-3">
 
-  {/* ABOUT */}
-  <Nav.Link
-    className="text1"
-    onClick={() => handleScrollToSection("about")}
-  >
-    About
-  </Nav.Link>
+            {/* Sezioni in Home — scroll */}
+            <Nav.Link className="text1" onClick={() => handleScrollToSection("about")}>
+              About
+            </Nav.Link>
+            <Nav.Link className="text1" onClick={() => handleScrollToSection("tech")}>
+              Stack
+            </Nav.Link>
+            <Nav.Link className="text1" onClick={() => handleScrollToSection("skills")}>
+              Skills
+            </Nav.Link>
 
-  {/* TECH */}
-  <Nav.Link
-    className="text1"
-    onClick={() => handleScrollToSection("tech")}
-  >
-    Stack
-  </Nav.Link>
+            {/* Pagine dedicate — navigate */}
+            <Nav.Link className="text1" onClick={() => handleNavigate("/qa")}>
+              QA
+            </Nav.Link>
+            <Nav.Link className="text1" onClick={() => handleNavigate("/reports")}>
+              Reports
+            </Nav.Link>
+            <Nav.Link className="text1" onClick={() => handleNavigate("/projects")}>
+              Projects
+            </Nav.Link>
+            <Nav.Link className="text1" onClick={() => handleNavigate("/contatti")}>
+              Contact
+            </Nav.Link>
 
-  {/* SKILLS */}
-  <Nav.Link
-    className="text1"
-    onClick={() => handleScrollToSection("skills")}
-  >
-    Skills
-  </Nav.Link>
-
-  {/* QA */}
-  <Nav.Link
-    className="text1"
-    onClick={() => handleScrollToSection("qa")}
-  >
-    QA
-  </Nav.Link>
-
-  {/* CASE STUDIES */}
-  <Nav.Link
-    className="text1"
-    onClick={() => handleScrollToSection("case-studies")}
-  >
-    Cases
-  </Nav.Link>
-
-  {/* PROJECTS */}
-  <Nav.Link
-    className="text1"
-    onClick={() => handleScrollToSection("projects")}
-  >
-    Projects
-  </Nav.Link>
-
-  {/* CONTACT */}
-  <Nav.Link
-    className="text1"
-    onClick={() => navigate("/contatti")}
-  >
-    Contact
-  </Nav.Link>
-
-</Nav>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
