@@ -33,9 +33,9 @@ const sectionCards = [
   {
     icon: "💻",
     titolo: "Progetti",
-    desc: "Full stack, frontend, backend e mobile. Da React + Spring Boot a Flutter con Firebase, passando per Angular e Redux.",
+    desc: "Full stack, frontend, backend, mobile e QA Automation. Da React + Spring Boot a Cypress + GitLab CI/CD.",
     badge: "info",
-    badgeText: "22 progetti",
+    badgeText: "23 progetti",
     route: "/projects",
     cta: "Vedi Progetti",
   },
@@ -130,14 +130,18 @@ const Home = function () {
                 </ul>
               </Col>
               <Col md={4}>
-                <h5 className="text-info">Testing</h5>
-                <ul className="list-unstyled">
-                  <li>Test Funzionali & di Regressione</li>
-<li>Security Testing (XSS/Injection)</li>
-<li>APK Testing & ADB/Logcat</li>
-<li>Test di Localizzazione (i18n)</li>
-                </ul>
-              </Col>
+  <h5 className="text-info">Testing & QA Automation</h5>
+  <ul className="list-unstyled">
+    <li>Cypress E2E Testing</li>
+    <li>Page Object Model</li>
+    <li>GitLab CI/CD (pipeline multi-job)</li>
+    <li>Faker.js — dati di test dinamici</li>
+    <li>Test Funzionali & di Regressione</li>
+    <li>Security Testing (XSS/Injection)</li>
+    <li>APK Testing & ADB/Logcat</li>
+    <li>Test di Localizzazione (i18n)</li>
+  </ul>
+</Col>
               
             </Row>
           </div>

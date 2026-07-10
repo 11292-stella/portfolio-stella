@@ -1,5 +1,5 @@
 import { Container, Row, Col, Card, Button } from "react-bootstrap"
-import { fullstackProjects, frontendProjects, backendProjects, flutterProjects } from "../../data/projectsData"
+import { fullstackProjects, frontendProjects, backendProjects, flutterProjects, qaAutomationProjects } from "../../data/projectsData"
 import "../../styles/home.css"
 
 const ProjectCard = ({ progetto }) => (
@@ -74,10 +74,11 @@ const Projects = function () {
         <section id="projects-hero" className="mt-5">
           <h1 className="text-center">💻 Progetti</h1>
           <p className="text1 text-center mt-2">
-            Full stack, frontend, backend e mobile. Da React + Spring Boot a Flutter con Firebase.
-          </p>
+     Full stack, frontend, backend, mobile e QA Automation. Da React + Spring Boot a Cypress + GitLab CI/CD.
+   </p>
         </section>
 
+        <ProjectSection title="🧪 QA Automation" projects={qaAutomationProjects} />
         <ProjectSection title="🔥 Full Stack" projects={fullstackProjects} />
         <ProjectSection title="🎨 Flutter" projects={flutterProjects} />
         <ProjectSection title="🎨 Frontend" projects={frontendProjects} />
