@@ -241,6 +241,17 @@ export const progetti = [
     tecnologie: "Cypress, JavaScript, GitLab CI/CD, Docker",
     repo: "https://github.com/11292-stella/cypress-e2e-restaurant-management",
   },
+
+  {
+    id: 24,
+    categoria: "qa-automation",
+    titolo: "Appium Mobile Test Automation",
+    descrizione:
+      "Suite di test E2E per un'app Android Flutter (gestione ristorante): Page Object Model, gesture native W3C, TestNG, report Allure.",
+    immagine: "/appium-report.png",
+    tecnologie: "Appium, Java, TestNG, Maven, Allure",
+    repo: "https://github.com/11292-stella/appium-mobile-test-automation",
+  },
 ];
 
 export const fullstackProjects = progetti.filter(

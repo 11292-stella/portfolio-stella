@@ -35,7 +35,7 @@ const sectionCards = [
     titolo: "Progetti",
     desc: "Full stack, frontend, backend, mobile e QA Automation. Da React + Spring Boot a Cypress + GitLab CI/CD.",
     badge: "info",
-    badgeText: "23 progetti",
+    badgeText: "24 progetti",
     route: "/projects",
     cta: "Vedi Progetti",
   },
@@ -133,6 +133,7 @@ const Home = function () {
   <h5 className="text-info">Testing & QA Automation</h5>
   <ul className="list-unstyled">
     <li>Cypress E2E Testing</li>
+    <li>Appium Mobile Testing</li>
     <li>Page Object Model</li>
     <li>GitLab CI/CD (pipeline multi-job)</li>
     <li>Faker.js — dati di test dinamici</li>
